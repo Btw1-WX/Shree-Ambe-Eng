@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'machinery-icon';
+  src:  url('fonts/machinery-iconf1e7.eot?ukbjz9');
+  src:  url('fonts/machinery-iconf1e7.eot?ukbjz9#iefix') format('embedded-opentype'),
+    url('fonts/machinery-iconf1e7.ttf?ukbjz9') format('truetype'),
+    url('fonts/machinery-iconf1e7.woff?ukbjz9') format('woff'),
+    url('fonts/machinery-iconf1e7.svg?ukbjz9#machinery-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="machinery-icon-"], [class*=" machinery-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'machinery-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.machinery-icon-message:before {
+  content: "\e916";
+}
+.machinery-icon-placeholder:before {
+  content: "\e915";
+}
+.machinery-icon-favorites-button:before {
+  content: "\e914";
+}
+.machinery-icon-letter:before {
+  content: "\e913";
+}
+.machinery-icon-worldwide:before {
+  content: "\e900";
+}
+.machinery-icon-clock1:before {
+  content: "\e901";
+}
+.machinery-icon-contact:before {
+  content: "\e902";
+}
+.machinery-icon-factory:before {
+  content: "\e903";
+}
+.machinery-icon-globe:before {
+  content: "\e904";
+}
+.machinery-icon-map:before {
+  content: "\e905";
+}
+.machinery-icon-play-button:before {
+  content: "\e906";
+}
+.machinery-icon-send:before {
+  content: "\e907";
+}
+.machinery-icon-next:before {
+  content: "\e908";
+}
+.machinery-icon-null:before {
+  content: "\e909";
+}
+.machinery-icon-add:before {
+  content: "\e90a";
+}
+.machinery-icon-human-rights:before {
+  content: "\e90b";
+}
+.machinery-icon-pin:before {
+  content: "\e90c";
+}
+.machinery-icon-clock:before {
+  content: "\e90d";
+}
+.machinery-icon-telephone:before {
+  content: "\e90e";
+}
+.machinery-icon-mails:before {
+  content: "\e90f";
+}
+.machinery-icon-helmet:before {
+  content: "\e910";
+}
+.machinery-icon-flight:before {
+  content: "\e911";
+}
+.machinery-icon-train:before {
+  content: "\e912";
+}
