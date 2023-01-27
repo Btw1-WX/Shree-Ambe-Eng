@@ -33,9 +33,9 @@
         if ($('.main-header').length) {
             var windowpos = $(window).scrollTop();
             var siteHeader = $('.main-header');
-            var sticky_Header = $('.sticky-header');
+            var sticky_Header = $('.header-lower');
             var scrollLink = $('.scroll-to-top');
-            if (windowpos >= 300) {
+            if (windowpos >= 50) {
                 sticky_Header.addClass("animated slideInDown")
                 siteHeader.addClass('fixed-header');
                 scrollLink.fadeIn(300);
@@ -936,3 +936,35 @@
     });
 
 })(window.jQuery);
+
+// TYPEIT
+
+new TypeIt("#type1", {
+    speed: 180,
+    loop: true,
+    waitUntilVisible: true,
+  })
+    .type("Shree Ambe", { delay: 500 })
+    .pause(1200)
+    .delete(10)
+    .go()
+
+new TypeIt("#type2", {
+    speed: 180,
+    loop: true,
+    waitUntilVisible: true,
+  })
+    .type("Machines", { delay: 500 })
+    .pause(1200)
+    .delete(8)
+    .go()
+
+new TypeIt("#type3", {
+    speed: 180,
+    loop: true,
+    waitUntilVisible: true,
+  })
+    .type("Solutions", { delay: 500 })
+    .pause(1200)
+    .delete(9)
+    .go()
