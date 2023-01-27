@@ -24,7 +24,7 @@
     //Hide Loading Box (Preloader)
     function handlePreloader() {
         if ($('.preloader').length) {
-            $('.preloader').delay(200).fadeOut(500);
+            $('.preloader').delay(1000).fadeOut(500);
         }
     }
 
@@ -33,9 +33,9 @@
         if ($('.main-header').length) {
             var windowpos = $(window).scrollTop();
             var siteHeader = $('.main-header');
-            var sticky_Header = $('.header-lower');
+            var sticky_Header = $('.sticky-header');
             var scrollLink = $('.scroll-to-top');
-            if (windowpos >= 50) {
+            if (windowpos >= 300) {
                 sticky_Header.addClass("animated slideInDown")
                 siteHeader.addClass('fixed-header');
                 scrollLink.fadeIn(300);
@@ -937,34 +937,31 @@
 
 })(window.jQuery);
 
-// TYPEIT
+// Services Button
 
-new TypeIt("#type1", {
-    speed: 180,
-    loop: true,
-    waitUntilVisible: true,
-  })
-    .type("Shree Ambe", { delay: 500 })
-    .pause(1200)
-    .delete(10)
-    .go()
+let sidebar_var1 = 0;
+function insource() {
+    console.log("working")
+    if(sidebar_var1 == 0){
+        document.querySelector(".sidebar-blog-category1").style.display ="block";
+        sidebar_var1=1;
+    }
+    else{
+        document.querySelector(".sidebar-blog-category1").style.display ="none";
+        sidebar_var1 = 0;
+    }
 
-new TypeIt("#type2", {
-    speed: 180,
-    loop: true,
-    waitUntilVisible: true,
-  })
-    .type("Machines", { delay: 500 })
-    .pause(1200)
-    .delete(8)
-    .go()
+}
+let sidebar_var2 = 0;
+function outsource() {
+    console.log("working")
+    if(sidebar_var2 == 0){
+        document.querySelector(".sidebar-blog-category2").style.display ="block";
+        sidebar_var2=1;
+    }
+    else{
+        document.querySelector(".sidebar-blog-category2").style.display ="none";
+        sidebar_var2 = 0;
+    }
 
-new TypeIt("#type3", {
-    speed: 180,
-    loop: true,
-    waitUntilVisible: true,
-  })
-    .type("Solutions", { delay: 500 })
-    .pause(1200)
-    .delete(9)
-    .go()
+}
