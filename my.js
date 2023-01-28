@@ -15,3 +15,35 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// TYPEIT
+
+new TypeIt("#type1", {
+  speed: 180,
+  loop: true,
+  waitUntilVisible: true,
+})
+  .type("Shree Ambe", { delay: 500 })
+  .pause(1200)
+  .delete(10)
+  .go();
+
+new TypeIt("#type2", {
+  speed: 180,
+  loop: true,
+  waitUntilVisible: true,
+})
+  .type("Machines", { delay: 500 })
+  .pause(1200)
+  .delete(8)
+  .go();
+
+new TypeIt("#type3", {
+  speed: 180,
+  loop: true,
+  waitUntilVisible: true,
+})
+  .type("Solutions", { delay: 500 })
+  .pause(1200)
+  .delete(9)
+  .go();
