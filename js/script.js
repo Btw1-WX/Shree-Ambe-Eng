@@ -1,3 +1,5 @@
+
+
 (function($) {
 
     "use strict";
@@ -24,7 +26,7 @@
     //Hide Loading Box (Preloader)
     function handlePreloader() {
         if ($('.preloader').length) {
-            $('.preloader').delay(200).fadeOut(500);
+            $('.preloader').delay(100).fadeOut(500);
         }
     }
 
@@ -937,34 +939,49 @@
 
 })(window.jQuery);
 
-// TYPEIT
 
-new TypeIt("#type1", {
-    speed: 180,
-    loop: true,
-    waitUntilVisible: true,
-  })
-    .type("Shree Ambe", { delay: 500 })
-    .pause(1200)
-    .delete(10)
-    .go()
+// Services Button
 
-new TypeIt("#type2", {
-    speed: 180,
-    loop: true,
-    waitUntilVisible: true,
-  })
-    .type("Machines", { delay: 500 })
-    .pause(1200)
-    .delete(8)
-    .go()
 
-new TypeIt("#type3", {
-    speed: 180,
-    loop: true,
-    waitUntilVisible: true,
-  })
-    .type("Solutions", { delay: 500 })
-    .pause(1200)
-    .delete(9)
-    .go()
+let service_select = document.querySelectorAll(".services-single");
+function service_show( n ){
+  for (let index = 0; index < 3; index++) {
+    console.log(index);
+    if(index == n){
+      service_select[n].style.display = "block";
+    }
+    else{
+      service_select[index].style.display = "none";
+    }
+  }
+}
+
+
+
+    let inbtn = 0;
+    function insource_service() {
+    console.log("working")
+    if(inbtn == 0){
+        document.querySelector(".sidebar-blog-category1").style.display ="block";
+        inbtn=1;
+    }
+    else{
+        document.querySelector(".sidebar-blog-category1").style.display ="none";
+        inbtn = 0;
+    }
+
+}
+let outbtn = 0;
+function outsource_service() {
+    console.log("working")
+    if(outbtn == 0){
+        document.querySelector(".sidebar-blog-category2").style.display ="block";
+        outbtn=1;
+    }
+    else{
+        document.querySelector(".sidebar-blog-category2").style.display ="none";
+        outbtn = 0;
+    }
+
+}
+
