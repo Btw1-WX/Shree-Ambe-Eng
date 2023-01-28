@@ -387,65 +387,6 @@
         });
     }
 
-    //client Carousel
-    if ($('.clients-carousel').length) {
-        $('.clients-carousel').owlCarousel({
-            loop: true,
-            margin: 30,
-            nav: false,
-            dots: false,
-            smartSpeed: 700,
-            autoplay: 5000,
-            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 2
-                },
-                800: {
-                    items: 3
-                },
-                1024: {
-                    items: 4
-                },
-                1200: {
-                    items: 4
-                }
-            }
-        });
-    }
-
-    //client Carousel
-    if ($('.client-carousel-two').length) {
-        $('.client-carousel-two').owlCarousel({
-            loop: true,
-            margin: 30,
-            nav: true,
-            dots: true,
-            smartSpeed: 700,
-            autoplay: 5000,
-            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 2
-                },
-                800: {
-                    items: 3
-                },
-                1024: {
-                    items: 4
-                },
-                1200: {
-                    items: 4
-                }
-            }
-        });
-    }
 
     //News Carousel
     if ($('.news-carousel').length) {
