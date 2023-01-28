@@ -1835,10 +1835,12 @@ img {
 
 #minimal-bootstrap-carousel .carousel-control.left {
     left: 1%;
+    display: none;
 }
 
 #minimal-bootstrap-carousel .carousel-control.right {
     right: 1%;
+    display: none;
 }
 
 #minimal-bootstrap-carousel .carousel-control:hover {
@@ -2336,6 +2338,9 @@ img {
 .services-section {
     position: relative;
     padding: 135px 0 80px;
+    background-image: url(../images/download.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .services-block {
@@ -2899,6 +2904,10 @@ img {
     font-weight: 400;
 }
 
+
+.service-details{
+    margin-left: 30px;
+}
 .why-us-tabs {
     position: relative;
     display: block;
@@ -3082,6 +3091,7 @@ img {
 
 .services-cat {
     position: relative;
+    margin-left: 20px;
 }
 
 .services-cat li {
@@ -3095,7 +3105,7 @@ img {
     display: block;
     font-size: 16px;
     line-height: 23px;
-    color: var(--customGray);
+    color: var(--customWhite);
     font-weight: 400;
     padding: 15px 0;
     border-bottom: 1px solid #f2f2f2;
@@ -3158,7 +3168,7 @@ img {
     position: relative;
     font-size: 20px;
     line-height: 1.2em;
-    color: var(--customGray);
+    color: var(--customWhite);
     font-weight: 400;
     margin-bottom: 23px;
 }
@@ -3197,7 +3207,7 @@ img {
     display: block;
     font-size: 16px;
     line-height: 20px;
-    color: var(--customGray);
+    color: var(--customWhite);
     font-weight: 400;
 }
 
@@ -3248,7 +3258,7 @@ img {
     display: block;
     font-size: 16px;
     line-height: 26px;
-    color: var(--customGray);
+    color: var(--customWhite);
     font-weight: 400;
 }
 
@@ -6131,6 +6141,7 @@ img {
 }
 
 .signle-testimonial-style-one .inner-box {
+    border: 1px solid black;
     padding-left: 50px;
     padding-right: 48px;
     position: relative;
@@ -8380,7 +8391,7 @@ img {
     font-weight: 400;
     padding: 9px 20px;
     background-color: var(--customWhite);
-    border: 1px solid #efefef;
+    border: 1px solid skyblue;
     -webkit-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
@@ -9435,6 +9446,7 @@ a.ui-button:active,
 ====================================================================
 
 ***/
+
 .sidebar-blog-category1,.sidebar-blog-category2{
     display:none;
 }
@@ -9445,18 +9457,27 @@ a.ui-button:active,
 }
 .sidebar-in-btn, .sidebar-out-btn{
     display: block;
-    margin: 10px;
+    margin: 10px 2px;
+    color: white;
+    height: 43px;
     background-color: skyblue;
     font-weight: 700;
-    border-radius: 10px;
-    padding: 4px;
+    border-radius: 8px;
+    padding: 9px;
+    text-align: center;
 }
+
+  
 
 .sidebar-page-container .content-side,
 .sidebar-page-container .sidebar-side {
     margin-bottom: 40px;
 }
-
+.sidebar-side{
+    padding: 23px;
+    box-shadow: 0px 1px 6px black;
+    background-color:#000000e0;
+}
 .sidebar-page-container .default-sidebar {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -9476,8 +9497,10 @@ a.ui-button:active,
 }*/
 
 .sidebar-widget {
+
+    
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 
 .sidebar-widget:last-child {
@@ -9631,7 +9654,7 @@ a.ui-button:active,
     position: relative;
     font-size: 20px;
     line-height: 1.2em;
-    color: var(--customGray);
+    color: var(--customWhite);
     font-weight: 400;
     margin-bottom: 23px;
 }
@@ -12010,6 +12033,7 @@ a.ui-button:active,
 
 .request-qoute-content-block .auto-container {
     position: relative;
+    box-shadow: 10px 10px 25px skyblue;
 }
 
 .request-qoute-content-block .no-gutters {
