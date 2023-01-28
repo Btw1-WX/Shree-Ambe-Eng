@@ -24,7 +24,7 @@
     //Hide Loading Box (Preloader)
     function handlePreloader() {
         if ($('.preloader').length) {
-            $('.preloader').delay(200).fadeOut(500);
+            $('.preloader').delay(1000).fadeOut(500);
         }
     }
 
@@ -947,7 +947,7 @@ new TypeIt("#type1", {
     .type("Shree Ambe", { delay: 500 })
     .pause(1200)
     .delete(10)
-    .go()
+    .go();
 
 new TypeIt("#type2", {
     speed: 180,
@@ -957,7 +957,7 @@ new TypeIt("#type2", {
     .type("Machines", { delay: 500 })
     .pause(1200)
     .delete(8)
-    .go()
+    .go();
 
 new TypeIt("#type3", {
     speed: 180,
@@ -967,4 +967,4 @@ new TypeIt("#type3", {
     .type("Solutions", { delay: 500 })
     .pause(1200)
     .delete(9)
-    .go()
+    .go();
