@@ -1,7 +1,5 @@
-// FadeLeft
-
-function revealLeft() {
-  var reveals = document.querySelectorAll(".fade-left");
+function reveal() {
+  var reveals = document.querySelectorAll(".why-us-tabs");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
@@ -9,132 +7,14 @@ function revealLeft() {
     var elementVisible = 50;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("reveal-fadeLeft");
+      reveals[i].classList.add("reveal");
     } else {
-      reveals[i].classList.remove("reveal-fadeLeft");
+      reveals[i].classList.remove("reveal");
     }
   }
 }
 
-window.addEventListener("scroll", revealLeft);
-
-//fadeRight
-function revealRight() {
-  var reveals = document.querySelectorAll(".fade-right");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 50;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("reveal-fadeRight");
-    } else {
-      reveals[i].classList.remove("reveal-fadeRight");
-    }
-  }
-}
-
-window.addEventListener("scroll", revealRight);
-
-//fadeUp
-function revealUp() {
-  var reveals = document.querySelectorAll(".fade-up");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 50;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("reveal-fadeUp");
-    } else {
-      reveals[i].classList.remove("reveal-fadeUp");
-    }
-  }
-}
-
-window.addEventListener("scroll", revealUp);
-
-
-//fadeDown
-function revealDown() {
-  var reveals = document.querySelectorAll(".fade-down");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 50;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("reveal-fadeDown");
-    } else {
-      reveals[i].classList.remove("reveal-fadeDown");
-    }
-  }
-}
-
-window.addEventListener("scroll", revealDown);
-
-
-const clientsContainer = document.querySelector('.clients-container');
-const clientsControlsContainer = document.querySelector('.clients-controls');
-const clientsControls = ['previous', 'next'];
-const clientsItems = document.querySelectorAll('.clients-item');
-
-class Carousel{
-    constructor(container, items,controls){
-        this.carouselContainer = container;
-        this.carouselControls = controls;
-        this.carouselArray = [...items];
-    }
-    updateclients(){
-        this.carouselArray.forEach(e1 =>{
-            e1.classList.remove('clients-item-1');
-            e1.classList.remove('clients-item-2');
-            e1.classList.remove('clients-item-3');
-            e1.classList.remove('clients-item-4');
-            e1.classList.remove('clients-item-5');
-        });
-
-
-        this.carouselArray.slice(0,5).forEach((e1,i)=>{
-            e1.classList.add(`clients-item-${i+1}`);
-        })
-    }
-
-    setCurrentState(direction){
-        if(direction.className == 'clients-controls-previous'){
-            this.carouselArray.unshift(this.carouselArray.pop());
-        }else{
-            this.carouselArray.push(this.carouselArray.shift());
-        }
-        this.updateclients();
-    }
-    setControls(){
-        this.carouselControls.forEach(control =>{
-            clientsControlsContainer.appendChild(document.createElement('button')).className = `clients-controls-${control}`;
-            document.querySelector(`.clients-controls-${control}`).innerText = control;
-        });
-    }
-
-    useControls(){
-        const triggers = [...clientsControlsContainer.childNodes];
-        triggers.forEach(control=>{
-            control.addEventListener('click', e =>{
-                e.preventDefault();
-                this.setCurrentState(control);
-            });
-        });
-    }
-}
-
-const exampleCarousel = new Carousel(clientsContainer,clientsItems,clientsControls);
-exampleCarousel.setControls();
-exampleCarousel.useControls();
-
-
-
+window.addEventListener("scroll", reveal);
 
 // TYPEIT
 
