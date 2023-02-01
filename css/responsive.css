@@ -925,7 +925,6 @@
 		padding: 30px 15px 20px;
 	}
 
-	.about-block .icon:after,
 	.clients-section:before,
 	.verticle-slider-one .verticle-carousel:before, 
 	.verticle-slider-one .verticle-carousel:after,
@@ -984,16 +983,9 @@
 
 	.sidebar-page-container .comments-area .comment,
 	.author-box .author-comment .inner,
-	.blog-single .lower-content,
-	.about-block .inner-box{
+	.blog-single .lower-content{
 		padding-left: 0;
 		text-align: center;
-	}
-
-	.about-block .icon{
-		position: relative;
-		margin-bottom: 20px;
-		display: inline-block;
 	}
 
 	.story-block .inner-box .date:before{
@@ -1100,13 +1092,6 @@
 	
 	.about-section-two .outer-box{
 		padding:50px 20px;	
-	}
-	.about-block h4:before {
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		-o-transform: translateX(-50%);
-		transform: translateX(-50%);
 	}
 
 }

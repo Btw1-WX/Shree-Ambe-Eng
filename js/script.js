@@ -1,6 +1,6 @@
 
 
-(function($) {
+(function ($) {
 
     "use strict";
 
@@ -22,14 +22,15 @@
             mainClass: 'my-mfp-zoom-in'
         });
     }
-    
+
     //Hide Loading Box (Preloader)
     function handlePreloader() {
         if ($('.preloader').length) {
             $('.preloader').delay(1000).fadeOut(500);
-        }
-    }
+            }
 
+    }
+    
     //Update Header Style and Scroll to Top
     function headerStyle() {
         if ($('.main-header').length) {
@@ -55,29 +56,29 @@
         $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
             effect: 'fade',
             testMode: true,
-            onChange: function(evt) {
-                    alert("The selected language is: " + evt.selectedItem);
-                }
-                //                ,afterLoad: function(evt){
-                //                    alert("The selected language has been loaded");
-                //                },
-                //                beforeOpen: function(evt){
-                //                    alert("before open");
-                //                },
-                //                afterOpen: function(evt){
-                //                    alert("after open");
-                //                },
-                //                beforeClose: function(evt){
-                //                    alert("before close");
-                //                },
-                //                afterClose: function(evt){
-                //                    alert("after close");
-                //                }
+            onChange: function (evt) {
+                alert("The selected language is: " + evt.selectedItem);
+            }
+            //                ,afterLoad: function(evt){
+            //                    alert("The selected language has been loaded");
+            //                },
+            //                beforeOpen: function(evt){
+            //                    alert("before open");
+            //                },
+            //                afterOpen: function(evt){
+            //                    alert("after open");
+            //                },
+            //                beforeClose: function(evt){
+            //                    alert("before close");
+            //                },
+            //                afterClose: function(evt){
+            //                    alert("after close");
+            //                }
         });
     };
 
     if ($('.area_select').length) {
-        $('.area_select').on('change', function() {
+        $('.area_select').on('change', function () {
             var val = $(this).val();
             if (val) {
                 $('.state:not(#value' + val + ')').slideUp();
@@ -117,12 +118,12 @@
         $('.main-header .navigation li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
 
         //Dropdown Button
-        $('.main-header .navigation li.dropdown .dropdown-btn').on('click', function() {
+        $('.main-header .navigation li.dropdown .dropdown-btn').on('click', function () {
             $(this).prev('ul').slideToggle(500);
         });
 
         //Disable dropdown parent link
-        $('.navigation li.dropdown > a').on('click', function(e) {
+        $('.navigation li.dropdown > a').on('click', function (e) {
             e.preventDefault();
         });
     }
@@ -282,40 +283,40 @@
                 }
             }
         });
-        $('.project-style-two-carousel-nav.btn-prev').on('click', function() {
-           $('.project-two-carousel').trigger('next.owl.carousel'); 
+        $('.project-style-two-carousel-nav.btn-prev').on('click', function () {
+            $('.project-two-carousel').trigger('next.owl.carousel');
         });
-        $('.project-style-two-carousel-nav.btn-next').on('click', function() {
-           $('.project-two-carousel').trigger('prev.owl.carousel'); 
+        $('.project-style-two-carousel-nav.btn-next').on('click', function () {
+            $('.project-two-carousel').trigger('prev.owl.carousel');
         });
     }
-        //Services Carousel
+    //Services Carousel
     if ($('.testimonial-carousel').length) {
         $('.testimonial-carousel').owlCarousel({
-            loop:true,
-            margin:20,
-            nav:false,
+            loop: true,
+            margin: 20,
+            nav: false,
             smartSpeed: 700,
             autoplay: 5000,
-            navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
-            responsive:{
-                0:{
-                    items:1
+            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+            responsive: {
+                0: {
+                    items: 1
                 },
-                480:{
-                    items:1
+                480: {
+                    items: 1
                 },
-                800:{
-                    items:1
+                800: {
+                    items: 1
                 },
-                1024:{
-                    items:1,
+                1024: {
+                    items: 1,
                 },
-                1200:{
-                    items:1
+                1200: {
+                    items: 1
                 }
             }
-        });         
+        });
     }
 
     //Services Carousel
@@ -451,11 +452,11 @@
             }
         });
 
-        $('#blog-2-carousel-nav .prev-btn').on('click', function() {
-           $('.blog-two-carousel').trigger('next.owl.carousel'); 
+        $('#blog-2-carousel-nav .prev-btn').on('click', function () {
+            $('.blog-two-carousel').trigger('next.owl.carousel');
         });
-        $('#blog-2-carousel-nav .next-btn').on('click', function() {
-           $('.blog-two-carousel').trigger('prev.owl.carousel'); 
+        $('#blog-2-carousel-nav .next-btn').on('click', function () {
+            $('.blog-two-carousel').trigger('prev.owl.carousel');
         });
     }
 
@@ -614,7 +615,7 @@
                 }
             });
 
-            winDow.on('resize', function() {
+            winDow.on('resize', function () {
 
                 $container.isotope({
                     itemSelector: '.masonry-item',
@@ -639,7 +640,7 @@
 
     //Product Tabs
     if ($('.project-tab').length) {
-        $('.project-tab .product-tab-btns .p-tab-btn').on('click', function(e) {
+        $('.project-tab .product-tab-btns .p-tab-btn').on('click', function (e) {
             e.preventDefault();
             var target = $($(this).attr('data-tab'));
 
@@ -662,7 +663,7 @@
             min: 0,
             max: 90,
             values: [8, 85],
-            slide: function(event, ui) {
+            slide: function (event, ui) {
                 $("input.property-amount").val(ui.values[0] + " - " + ui.values[1]);
             }
         });
@@ -681,7 +682,7 @@
 
     //Fact Counter + Text Count
     if ($('.count-box').length) {
-        $('.count-box').appear(function() {
+        $('.count-box').appear(function () {
 
             var $t = $(this),
                 n = $t.find(".count-text").attr("data-stop"),
@@ -696,10 +697,10 @@
                 }, {
                     duration: r,
                     easing: "linear",
-                    step: function() {
+                    step: function () {
                         $t.find(".count-text").text(Math.floor(this.countNum));
                     },
-                    complete: function() {
+                    complete: function () {
                         $t.find(".count-text").text(this.countNum);
                     }
                 });
@@ -711,7 +712,7 @@
 
     //Accordion Box
     if ($('.accordion-box').length) {
-        $(".accordion-box").on('click', '.acc-btn', function() {
+        $(".accordion-box").on('click', '.acc-btn', function () {
 
             var outerBox = $(this).parents('.accordion-box');
             var target = $(this).parents('.accordion');
@@ -735,7 +736,7 @@
 
     //Tabs Box
     if ($('.tabs-box').length) {
-        $('.tabs-box .tab-buttons .tab-btn').on('click', function(e) {
+        $('.tabs-box .tab-buttons .tab-btn').on('click', function (e) {
             e.preventDefault();
             var target = $($(this).attr('data-tab'));
 
@@ -793,7 +794,7 @@
 
     // Scroll to a Specific Div
     if ($('.scroll-to-target').length) {
-        $(".scroll-to-target").on('click', function() {
+        $(".scroll-to-target").on('click', function () {
             var target = $(this).attr('data-target');
             // animate
             $('html, body').animate({
@@ -828,10 +829,10 @@
             //Cache the animationend event in a variable
             var animEndEv = 'webkitAnimationEnd animationend';
 
-            elems.each(function() {
+            elems.each(function () {
                 var $this = $(this),
                     $animationType = $this.data('animation');
-                $this.addClass($animationType).one(animEndEv, function() {
+                $this.addClass($animationType).one(animEndEv, function () {
                     $this.removeClass($animationType);
                 });
             });
@@ -854,7 +855,7 @@
 
 
         //Other slides to be animated on carousel slide event 
-        $myCarousel.on('slide.bs.carousel', function(e) {
+        $myCarousel.on('slide.bs.carousel', function (e) {
             var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
             doAnimations($animatingElems);
         });
@@ -865,7 +866,7 @@
        When document is Scrollig, do
        ========================================================================== */
 
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         headerStyle();
     });
 
@@ -873,41 +874,46 @@
        When document is loaded, do
        ========================================================================== */
 
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         handlePreloader();
         enableMasonry();
     });
 
 })(window.jQuery);
 
-
 // Services Button
 
 
 let service_select = document.querySelectorAll(".services-single");
+
+let active_service = document.querySelectorAll('.service-active');
 function service_show( n ){
   for (let index = 0; index < 6; index++) {
     console.log(index);
     if(index == n){
       service_select[n].style.display = "block";
+      active_service[n].classList.add("coloring");
+      console.log(active_service);
     }
     else{
-      service_select[index].style.display = "none";
+        service_select[index].style.display = "none";
+        active_service[index].classList.remove("coloring");
     }
   }
 }
 
 
 
-    let inbtn = 0;
+    let inbtn = 1;
     function insource_service() {
     console.log("working")
     if(inbtn == 0){
         document.querySelector(".sidebar-blog-category1").style.display ="block";
+        
         inbtn=1;
     }
-    else{
-        document.querySelector(".sidebar-blog-category1").style.display ="none";
+    else {
+        document.querySelector(".sidebar-blog-category1").style.display = "none";
         inbtn = 0;
     }
 
@@ -915,14 +921,35 @@ function service_show( n ){
 let outbtn = 0;
 function outsource_service() {
     console.log("working")
-    if(outbtn == 0){
-        document.querySelector(".sidebar-blog-category2").style.display ="block";
-        outbtn=1;
+    if (outbtn == 0) {
+        document.querySelector(".sidebar-blog-category2").style.display = "block";
+        outbtn = 1;
     }
-    else{
-        document.querySelector(".sidebar-blog-category2").style.display ="none";
+    else {
+        document.querySelector(".sidebar-blog-category2").style.display = "none";
         outbtn = 0;
     }
 
 }
+
+let service_select = document.querySelectorAll(".services-single");
+function service_show(n) {
+    for (let index = 0; index < 6; index++) {
+        console.log(index);
+        if (index == n) {
+            service_select[n].style.display = "block";
+        }
+        else {
+            service_select[index].style.display = "none";
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
