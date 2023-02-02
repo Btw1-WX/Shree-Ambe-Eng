@@ -11982,7 +11982,6 @@ a.ui-button:active,
 .request-qoute-content-block .auto-container {
     position: relative;
     padding: 0;
-    border: 1px solid black;
 }
 
 .request-qoute-content-block .no-gutters {
@@ -12555,10 +12554,12 @@ a.ui-button:active,
 /* Gallery Page */
 .gallery-section {
     background: var(--gradient2);
+    padding-top: 5rem;
 }
 .gallery-section .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery-section .gallery-block {

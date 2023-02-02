@@ -217,7 +217,7 @@
 @media only screen and (max-width: 1023px){
 
 	.main-header .header-lower{
-		position: relative;
+		position: fixed;
 		background-color: #333333;
 	}
 	
@@ -430,6 +430,13 @@
 
 @media only screen and (max-width: 767px){
 	
+
+	.header-lower.animated.slideInDown {
+		top: 0;
+		border: none;
+		border-radius: 0;
+		width: 100%;
+	}
 	.main-header .btn-outer{
 		border: 0 none;
 		right: auto;
@@ -534,7 +541,6 @@
 	}
 	
 	.main-menu .collapse {
-	   max-height:300px;
 		overflow:auto;
 		float:none;
 		width:100%;
@@ -1241,6 +1247,12 @@
 	.project-style-two {
 		margin-bottom: 70px;
 	}
+	.about-us .auto-container {
+		margin: 0 1rem;     
+	}
+	.what-we-do .auto-container {
+        padding: 5rem 3rem;
+    }
 }
 @media (max-width: 550px) {
 	.blog-single .top-box .image-box, .blog-single .top-box .text-box {
