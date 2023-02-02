@@ -27,9 +27,10 @@
     function handlePreloader() {
         if ($('.preloader').length) {
             $('.preloader').delay(1000).fadeOut(500);
-        }
-    }
+            }
 
+    }
+    
     //Update Header Style and Scroll to Top
     function headerStyle() {
         if ($('.main-header').length) {
@@ -882,12 +883,34 @@
 
 // Services Button
 
-let inbtn = 0;
-function insource_service() {
+
+let service_select = document.querySelectorAll(".services-single");
+
+let active_service = document.querySelectorAll('.service-active');
+function service_show( n ){
+  for (let index = 0; index < 6; index++) {
+    console.log(index);
+    if(index == n){
+      service_select[n].style.display = "block";
+      active_service[n].classList.add("coloring");
+      console.log(active_service);
+    }
+    else{
+        service_select[index].style.display = "none";
+        active_service[index].classList.remove("coloring");
+    }
+  }
+}
+
+
+
+    let inbtn = 1;
+    function insource_service() {
     console.log("working")
-    if (inbtn == 0) {
-        document.querySelector(".sidebar-blog-category1").style.display = "block";
-        inbtn = 1;
+    if(inbtn == 0){
+        document.querySelector(".sidebar-blog-category1").style.display ="block";
+        
+        inbtn=1;
     }
     else {
         document.querySelector(".sidebar-blog-category1").style.display = "none";
