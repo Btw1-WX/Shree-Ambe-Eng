@@ -3477,3 +3477,15 @@ to {
 }
 
 }
+
+
+@keyframes g1 {
+  0%{background: var(--gradient1);}
+  100%{background: var(--gradient2);}
+}
+
+@keyframes g2 {
+  0%{background: var(--gradient2);color: var(--gradient1);}
+  100%{background: var(--gradient1);color: var(--gradient2);}
+}
+
