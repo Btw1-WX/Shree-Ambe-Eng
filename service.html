@@ -97,8 +97,76 @@
         <div class="sidebar-page-container ">
             <div class="auto-container">
                 <div class="row clearfix">
+                    <!--Sidebar Side-->
+                    <div class="sidebar-side col-lg-3 col-md-3 col-sm-12 col-xs-12 fade-left">
+                        <aside class="sidebar fade-down">
+                            <!--Blog Category Widget-->
+                            <div class="sidebar-widget  sidebar-blog-category">
+                                <button class =" sidebar-in-btn" onclick="insource_service()" >House Services</button>
+                                <div class="sidebar-blog-category1" style="display: block;">
+                                    <ul class="services-cat">
+                                        <li><a  class = "service-active coloring" onclick="service_show(0)">Precision Machine Job Work</a></li>
+                                        <li><a class="service-active" onclick="service_show(1)">DRO Machining Works</a></li>
+                                        <li><a class = "service-active" onclick="service_show(2)">Surface Grinding Works</a></li>
+                                    </ul>
+                                </div>
+                                <button class =" sidebar-out-btn" onclick="outsource_service()">Source Services</button>
+                                <div class="sidebar-blog-category2">
+                                    <ul class="services-cat">
+                                        <li ><a class = "service-active" onclick="service_show(3)">Milling Machine Works</a></li>
+                                        <li ><a class = "service-active" onclick="service_show(4)">CNC Machine Works</a></li>
+                                        <li ><a class = "service-active" onclick="service_show(5)">Lathe Machine Works</a></li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+
+                            <!--Brochure-->
+                            <div class="sidebar-widget brochure-widget">
+                                <h3>Our Brochures</h3>
+                                <hr>
+                                <div class="link-box">
+                                    <span class="icon fa fa-file-pdf-o"></span>
+                                    <h5>Service Overview</h5>
+                                    <a href="#">Download.pdf</a>
+                                </div>
+                                <div class="link-box">
+                                    <span class="icon fa fa-file-word-o"></span>
+                                    <h5>About Our Company</h5>
+                                    <a href="#">Download.txt</a>
+                                </div>
+                            </div>
+
+                            <!--Contact Widhet-->
+                            <div class="sidebar-widget testimonials-widget">
+                                <h3>Testimonials</h3>
+                                <div class="testimonial-carousel owl-carousel owl-theme">
+                                    <div class="testimonial-block-three">
+                                        <div class="info">
+                                            <div class="thumb"><img src="images/resource/thumb-12.jpg" alt=""></div>
+                                            <h5 class="name">Teena Venanda</h5>
+                                            <span class="city">Newyork</span>
+                                        </div>
+                                        <div class="text">Must explain too you how that mistaken idea denoncing sed all
+                                            pleasure & praising pain was and will give all actual human .</div>
+                                    </div>
+
+                                    <div class="testimonial-block-three">
+                                        <div class="info">
+                                            <div class="thumb"><img src="images/resource/thumb-12.jpg" alt=""></div>
+                                            <h5 class="name">Teena Venanda</h5>
+                                            <span class="city">Newyork</span>
+                                        </div>
+                                        <div class="text">Must explain too you how that mistaken idea denoncing sed all
+                                            pleasure & praising pain was and will give all actual human .</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
                     <!--Content Side / Our Blog-->
-                    <div class="content-side pull-right col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                    <div class="content-side pull-right col-lg-9 col-md-8 col-sm-12 col-xs-12 fade-right">
 
                         <!-- Precision Making -->
                         <div class="services-single  " style="display: block;">
@@ -476,7 +544,7 @@
                             </div>
                         </div>
                         
-                        <div class="feature-info-block service-details">
+                        <div class="feature-info-block service-details fade-left">
                             <h3 class="title">Research & Development</h3>
                             <div class="row clearfix">
                                 <div class="info-column col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -581,73 +649,7 @@
                         
                     </div>
 
-                    <!--Sidebar Side-->
-                    <div class="sidebar-side col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <aside class="sidebar">
-                            <!--Blog Category Widget-->
-                            <div class="sidebar-widget  sidebar-blog-category">
-                                <button class =" sidebar-in-btn" onclick="insource_service()" >House Services</button>
-                                <div class="sidebar-blog-category1" style="display: block;">
-                                    <ul class="services-cat">
-                                        <li><a  class = "service-active coloring" onclick="service_show(0)">Precision Machine Job Work</a></li>
-                                        <li><a class="service-active" onclick="service_show(1)">DRO Machining Works</a></li>
-                                        <li><a class = "service-active" onclick="service_show(2)">Surface Grinding Works</a></li>
-                                    </ul>
-                                </div>
-                                <button class =" sidebar-out-btn" onclick="outsource_service()">Source Services</button>
-                                <div class="sidebar-blog-category2">
-                                    <ul class="services-cat">
-                                        <li ><a class = "service-active" onclick="service_show(3)">Milling Machine Works</a></li>
-                                        <li ><a class = "service-active" onclick="service_show(4)">CNC Machine Works</a></li>
-                                        <li ><a class = "service-active" onclick="service_show(5)">Lathe Machine Works</a></li>
-                                    </ul>
-                                </div>
-                               
-                            </div>
-
-                            <!--Brochure-->
-                            <div class="sidebar-widget brochure-widget">
-                                <h3>Our Brochures</h3>
-                                <hr>
-                                <div class="link-box">
-                                    <span class="icon fa fa-file-pdf-o"></span>
-                                    <h5>Service Overview</h5>
-                                    <a href="#">Download.pdf</a>
-                                </div>
-                                <div class="link-box">
-                                    <span class="icon fa fa-file-word-o"></span>
-                                    <h5>About Our Company</h5>
-                                    <a href="#">Download.txt</a>
-                                </div>
-                            </div>
-
-                            <!--Contact Widhet-->
-                            <div class="sidebar-widget testimonials-widget">
-                                <h3>Testimonials</h3>
-                                <div class="testimonial-carousel owl-carousel owl-theme">
-                                    <div class="testimonial-block-three">
-                                        <div class="info">
-                                            <div class="thumb"><img src="images/resource/thumb-12.jpg" alt=""></div>
-                                            <h5 class="name">Teena Venanda</h5>
-                                            <span class="city">Newyork</span>
-                                        </div>
-                                        <div class="text">Must explain too you how that mistaken idea denoncing sed all
-                                            pleasure & praising pain was and will give all actual human .</div>
-                                    </div>
-
-                                    <div class="testimonial-block-three">
-                                        <div class="info">
-                                            <div class="thumb"><img src="images/resource/thumb-12.jpg" alt=""></div>
-                                            <h5 class="name">Teena Venanda</h5>
-                                            <span class="city">Newyork</span>
-                                        </div>
-                                        <div class="text">Must explain too you how that mistaken idea denoncing sed all
-                                            pleasure & praising pain was and will give all actual human .</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -659,7 +661,7 @@
                 <div class="row clearfix">
                     <!-- Title Column -->
                     <div class="title-column col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                        <div class="inner-column">
+                        <div class="inner-column fade-right">
                             <div class="sec-title">
                                 <h2>Request a Quote</h2>
                             </div>
@@ -671,7 +673,7 @@
 
                     <!-- Form Column -->
                     <div class="form-column col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <div class="inner-column">
+                        <div class="inner-column fade-left">
                             <div class="text">For Business: For Business inquiry fill our feedback form and Troll Free
                                 Number - (+91) 00-700-6202, our team will help you with in 24 hours.</div>
                             <!--Contact Form-->

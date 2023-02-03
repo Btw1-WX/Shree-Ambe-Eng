@@ -76,6 +76,44 @@ function revealDown() {
 
 window.addEventListener("scroll", revealDown);
 
+//bounceInLeft
+function revealbounceLeft() {
+  var reveals = document.querySelectorAll(".bounce-left");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 50;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("reveal-bounceInLeft");
+    } else {
+      reveals[i].classList.remove("reveal-bounceInLeft");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealbounceLeft);
+
+//bounceInRight
+function revealbounceRight() {
+  var reveals = document.querySelectorAll(".bounce-right");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 50;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("reveal-bounceInRight");
+    } else {
+      reveals[i].classList.remove("reveal-bounceInRight");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealbounceRight);
+
 
 const clientsContainer = document.querySelector('.clients-container');
 const clientsControlsContainer = document.querySelector('.clients-controls');

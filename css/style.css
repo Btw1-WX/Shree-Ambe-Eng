@@ -8237,6 +8237,7 @@ img {
     background-color: #f7f7f7;
     padding: 80px 0;
     z-index: 9;
+    margin-bottom: 50px;
 }
 
 .contact-section .title-column .inner-column {
@@ -9400,13 +9401,14 @@ a.ui-button:active,
     position: relative;
     padding: 80px 0px 40px;
     overflow: hidden;
+    background: var(--gradient1);
 }
 .sidebar-in-btn, .sidebar-out-btn{
     display: block;
     margin: 10px 2px;
-    color: white;
+    color: var(--customWhite);
     height: 43px;
-    background-color: skyblue;
+    background-color: var(--customGray);
     font-weight: 700;
     border-radius: 8px;
     padding: 9px;
@@ -12589,24 +12591,33 @@ a.ui-button:active,
     z-index: -1111;
 }
 
+/* //animation class */
+.reveal-bounceInLeft{
+    animation: bounceInLeft 2s linear 1;
+}
+
+.reveal-bounceInRight{
+    animation: bounceInRight 2s linear 1;
+}
+
 .reveal-fadeLeft{
-    animation:  fadeInLeft 2500ms linear  1  ;
-    /* animation-delay: calc(var(--scroll)*-1s); */
+    animation:  fadeInLeft 2s linear  1  ;
+    
 }
 
 .reveal-fadeRight{
-    animation:  fadeInRight 2500ms linear  1  ;
-    /* animation-delay: calc(var(--scroll)*-1s); */
+    animation:  fadeInRight 2s linear  1  ;
+    
 }
 
 .reveal-fadeUp{
-    animation:  fadeInUp 2500ms linear  1  ;
-    /* animation-delay: calc(var(--scroll)*-1s); */
+    animation:  fadeInUp 2s linear  1  ;
+    
 }
 
 .reveal-fadeDown{
-    animation:  fadeInDown 1000ms linear  ;
-    /* animation-delay: calc(var(--scroll)*-1s); */
+    animation:  fadeInDown 1s linear  ;
+    
 }
 
 /* //clients

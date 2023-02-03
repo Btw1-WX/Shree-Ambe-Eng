@@ -931,25 +931,3 @@ function outsource_service() {
     }
 
 }
-
-let service_select = document.querySelectorAll(".services-single");
-function service_show(n) {
-    for (let index = 0; index < 6; index++) {
-        console.log(index);
-        if (index == n) {
-            service_select[n].style.display = "block";
-        }
-        else {
-            service_select[index].style.display = "none";
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
