@@ -12135,75 +12135,6 @@ a.ui-button:active,
 }
 
 
-
-/*** 
-
-====================================================================
-    Client Carousel Section
-====================================================================
-
-***/
-.client-section{
-    background-color: var(--customGray);
-    padding-top: 5rem;
-}
-
-.client-section .sec-title {
-    margin: 0;
-}
-
-@keyframes rotate-3d {
-    from{}
-    to{transform: rotateY(360deg);}
-}
-
-.client-carousel {
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-/* 
-.client-carousel .item {
-    position: relative;
-    top: 3rem;
-    left: 42%;
-    height: 50rem;
-    width: 20rem;
-    transform-style: preserve-3d;
-    animation: rotate-3d 20s linear infinite;
-}
-
-.client-carousel .item span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*45deg)) translateY(350px);
-}
-
-
-.client-carousel .item span img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 2rem;
-    object-fit: cover;
-    transition: 2s;
-    background-color: var(--customColor);
-}
-
-.client-carousel .item span:hover img {
-    transform: translateY(-50px);
-} */
-
-
-
 /*** 
 
 ====================================================================
@@ -12626,6 +12557,13 @@ a.ui-button:active,
  
 .clients{
     width:100%;
+    background: var(--customColor);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.clients h1 {
+    color: black;
 }
 
 .clients-container{
@@ -12633,7 +12571,6 @@ a.ui-button:active,
     display: flex;
     height: 400px;
     margin: 0 auto;
-    max-width: 1000px;
     position: relative;
 }
 
@@ -12641,17 +12578,19 @@ a.ui-button:active,
     height: 200px;
     opacity: 0;
     position: absolute;
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
     width: 330px;
     z-index: 0;
+    padding: 5rem;
     border-radius: 15px;
     background-size: contain;
+    background-color: black;
 }
 
 .clients-item-1{
-    left: 15%;
+    left: 23%;
     opacity: .4;
-    transform: translateX((-50%));
+    transform: translateX(-50%);
 }
 
 .clients-item-2, .clients-item-4{
@@ -12662,8 +12601,8 @@ a.ui-button:active,
 }
 
 .clients-item-2{
-    left: 30%;
-    transform: translateX((-50%));
+    left: 35%;
+    transform: translateX(-50%);
 }
 
 .clients-item-3{
@@ -12677,20 +12616,25 @@ a.ui-button:active,
 }
 
 .clients-item-4{
-    left: 70%;
+    left: 67%;
     transform: translateX(-50%);
 }
 
 .clients-item-5{
-    left: 50%;
+    left: 78%;
     opacity: .4;
+    transform: translateX(-50%);
+}
+
+.clients-item-6 {
+    left: 50%;
+    opacity: 0;
     transform: translateX(-50%);
 }
 
 .clients-controls{
     display: flex;
     justify-content: center;
-    margin: 25px 0;
     height: 100px;
 }
 
