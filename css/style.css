@@ -2260,6 +2260,7 @@ img {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    margin-top: 20px;
 }
 
 .highlights .highlight-block {
@@ -3950,19 +3951,31 @@ img {
     font-weight: 400;
 }
 
-.story-block {
+.image-column {
     position: relative;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     padding-bottom: 50px;
 }
 
-.story-block .inner-box {
+.image-column .inner-box {
     position: relative;
     padding-left: 120px;
-    margin-left: 120px;
-    min-height: 120px;
+    margin: 15px;
+    
 }
 
+.main-contact-block{
+    position: relative;
+    /* padding-left: 5px; */
+    padding-bottom: 50px;
+    
+}
+
+.main-contact-block .inner-box{
+    position: relative;
+    padding-left: 120px;
+    margin: 15px;
+}
 .story-block .inner-box .date {
     position: absolute;
     left: -125px;
@@ -4036,7 +4049,7 @@ img {
     color: #848484;
     font-weight: 400;
 }
-
+/*
 .story-section .verticle-slider-one {
     position: relative;
     padding-top: 30px;
@@ -5651,7 +5664,7 @@ img {
 
 ***/
 
-.industry-section {
+/* .industry-section { 
     position: relative;
     padding-top: 70px;
 }
@@ -5812,6 +5825,7 @@ img {
     background-position: center;
     background-size: cover;
     padding: 35px 0;
+    margin-top:30px;
 }
 
 .call-to-action:before {
@@ -8447,10 +8461,13 @@ img {
 ==================================================================
 
 ***/
-
 .contact-section-two {
     position: relative;
-    padding: 80px 0
+    padding: 80px;
+}
+
+.contact-section-two .row .clearfix {
+    margin-right: 100px;
 }
 
 .contact-section-two .carousel-column .inner-column {
@@ -11975,6 +11992,7 @@ a.ui-button:active,
     background: var(--customWhite);
     padding: 0;
     position: relative;
+    margin: 0;
 }
 
 .request-qoute-content-block:before {
@@ -12557,7 +12575,7 @@ a.ui-button:active,
  
 .clients{
     width:100%;
-    background: var(--customColor);
+    /* background: var(--customColor); */
     padding: 5rem 0;
     text-align: center;
 }
@@ -12719,4 +12737,157 @@ a.ui-button:active,
 
 .clients-nav li.clients-item-selected{
     background: #555;
+}
+
+/* Project Section */
+
+.project-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* width: 100vh; */
+    height: 100%;
+ 
+}
+
+.project-set .widgets-section span{
+    position: absolute;
+}
+
+.project-set .container{
+	margin-right:60px;
+}
+
+.project-set .row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.project-set .image{
+	background: #50A7FF;
+	position: relative;
+	flex: 1;
+	max-width: 460px;
+	height: 400px;
+	margin: 20px;
+	overflow: hidden;
+}
+
+.project-set .image img{
+	opacity: 0.8;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+.project-set .image:hover img{
+	opacity: 1;
+    
+}
+.project-set .image:hover img {
+    filter: blur(5px);
+}
+
+.project-set .image .details{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.project-set .image .details h2{
+	text-align: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 70px;
+	transition: 0.4s;
+	transition-property: transform;
+}
+
+.project-set .image .details h2 span{
+	font-weight: 900;
+}
+
+.project-set .image:hover .details h2{
+	transform: translateX(-30px);
+}
+
+.project-set .image .details p{
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
+
+.project-set .image:hover .details p{
+	opacity: 1;
+	transform: translateX(-30px);
+}
+
+.project-set .more{
+	position: absolute;
+	background: rgba(3,176,247, 0.8);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	bottom: -60px;
+	transition: 0.6s;
+	transition-property: bottom;
+}
+
+.project-set .image:hover .more{
+	bottom: 0;
+}
+
+.project-set .more .read-more{
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.project-set .more .read-more span{
+	font-weight: 900;
+}
+
+.project-set .more .icon-links i{
+	color: #000;
+	font-size: 20px;
+}
+
+.project-set .more .icon-links a:not(:last-child) i{
+	margin-right: 20px;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px){
+	.project-set .image{
+		flex: 100%;
+		max-width: 480px;
+	}
+}
+
+@media (max-width: 400px){
+	.project-set .image .details p{
+		font-size: 16px;
+	}
+
+	.project-set .more .read-more, .more .icon-links a i{
+		font-size: 18px;
+	}
 }

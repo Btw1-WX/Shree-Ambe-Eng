@@ -11,7 +11,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <link href="./css/animate.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--Favicon-->
   <link rel="shortcut icon" href="images/SAE(master).png" type="image/x-icon">
   <link rel="icon" href="images/SAE(master).png" type="image/x-icon">
@@ -85,7 +85,7 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active slide-1">
           <video autoplay loop muted controls width="100%">
-            <source src="./images/Carousel Video.mp4" type="video/mp4">
+            <source src="./images/main-video.mp4" type="video/mp4">
           </video>
           <div class="carousel-caption">
             <div class="container">
@@ -169,7 +169,7 @@
 
 
     <!-- Highlights -->
-    <div class="highlights dark-bg">
+    <div class="highlights dark-bg fade-left">
       <div class="auto-container">
         <div class="highlight-carousel owl-carousel owl-theme fade-left">
           <!-- Highlight Block -->
@@ -330,7 +330,7 @@
         <div class="row clearfix">
           <!-- Content -->
           <div class="content-column col-md-6 col-sm-12 col-xs-12 fade-left">
-            <div class="inner-column" data-aos="fade-down" data-aos-duration="1500">
+            <div class="inner-column" >
               <div class="sec-title light">
                 <h2>What We Achived?</h2>
                 <h5>Strength and growth comes only through continuous effort & struggle.</h5>
@@ -352,9 +352,10 @@
           <!-- Video Column -->
           <div class="video-column col-md-6 col-sm-12 col-xs-12 fade-right">
             <div class="inner-column">
-              <figure class="image"><img src="images/resource/video-img.jpg" alt="">
-                <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="link" data-fancybox="gallery"
-                  data-caption=""><span class="icon fa fa-play-circle"></span></a>
+              <figure class="image">
+                <video  autoplay loop  height ="120%" width="120%">
+                  <source src="./images/Carousel Video.mp4" type="video/mp4">
+                </video>
               </figure>
             </div>
           </div>
@@ -364,7 +365,7 @@
     <!--End What We Do -->
 
     <!-- About Us -->
-    <section class="about-us">
+    <section class="about-us" >
       <div class="auto-container">
         <div class="row clearfix">
           <!-- Info Column -->
@@ -847,7 +848,7 @@
   <script src="js/owl.js"></script>
   <script src="js/appear.js"></script>
   <script src="js/wow.js"></script>
-  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script> 
   <script src="js/script.js"></script>
   <script src="my.js"></script>
 
