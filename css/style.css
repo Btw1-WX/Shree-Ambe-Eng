@@ -844,6 +844,9 @@ img {
     color: var(--customWhite);
     font-weight: 400;
 }
+.header-lower.animated.slideInDown li  .special{
+    color: var(--customGray);
+}
 
 .main-header .nav-outer {
     position: relative;
@@ -8870,7 +8873,49 @@ a.ui-button:active,
 
 .main-footer .footer-column {
     position: relative;
+    border-right: 1px solid rgba(0, 255, 255, 0.5);
+    height: 335px;
+    background: transparent;
+    overflow: hidden;
+   
 }
+.widgets-section span {
+    position: absolute;
+    border-radius: 100vmax;
+  }
+.right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(0, 255, 255, 0.5),
+      rgb(0, 255, 255)
+    );
+  }
+.right {
+    animation: animateRight 7s ease-out infinite;
+  }
+@keyframes animateRight {
+    0%,
+    25% {
+      opacity: 0;
+      height: 0;
+    }
+
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+
+    55%,
+    100% {
+      height: 100%;
+      opacity: 0;
+    }
+  }
 
 .main-footer .footer-widget {
     position: relative;
