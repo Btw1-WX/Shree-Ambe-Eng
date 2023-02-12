@@ -12570,6 +12570,7 @@ a.ui-button:active,
     border-radius: 2rem;
     background: var(--gradient1);
     color: var(--customWhite);
+    max-width: 1170px;
 }
 
 .gallery-section .gallery-block .lower-content {
