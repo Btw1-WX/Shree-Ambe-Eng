@@ -883,6 +883,7 @@ img {
     border-radius: 2rem;
     background-color: var(--customWhite);
     padding: 0.5rem;
+    cursor: pointer;
 }
 
 .main-menu .navigation>li:last-child {

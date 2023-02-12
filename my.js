@@ -206,3 +206,7 @@ new TypeIt("#type3", {
   .pause(1200)
   .delete(9)
   .go();
+
+  function page_redirect(){
+  window.location="index.html";
+}
