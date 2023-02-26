@@ -12096,7 +12096,7 @@ a.ui-button:active,
 }
 
 .request-qoute-content-block .image-column .content {
-    display: table-cell;
+    display: none;
     vertical-align: bottom;
 }
 
@@ -12585,6 +12585,10 @@ a.ui-button:active,
     text-align: center;
     padding: 2rem 0rem;
 }
+.gallery-section .image-box img{
+    height: 300px;
+    width: 400px;
+}
 
 /* Video Playback */
 
@@ -12597,30 +12601,30 @@ a.ui-button:active,
 
 /* //animation class */
 .reveal-bounceInLeft{
-    animation: bounceInLeft 2s linear 1;
+    animation: bounceInLeft .8s linear 1;
 }
 
 .reveal-bounceInRight{
-    animation: bounceInRight 2s linear 1;
+    animation: bounceInRight .8s linear 1;
 }
 
 .reveal-fadeLeft{
-    animation:  fadeInLeft 2s linear  1  ;
+    animation:  fadeInLeft .8s linear  1  ;
     
 }
 
 .reveal-fadeRight{
-    animation:  fadeInRight 2s linear  1  ;
+    animation:  fadeInRight .8s linear  1  ;
     
 }
 
 .reveal-fadeUp{
-    animation:  fadeInUp 2s linear  1  ;
+    animation:  fadeInUp .8s linear  1  ;
     
 }
 
 .reveal-fadeDown{
-    animation:  fadeInDown 1s linear  ;
+    animation:  fadeInDown .8s linear  ;
     
 }
 

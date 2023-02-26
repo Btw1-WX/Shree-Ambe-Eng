@@ -1402,7 +1402,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
-    transform: translateY(20px);
+    transform: translateY(200px);
   }
 
   100% {
