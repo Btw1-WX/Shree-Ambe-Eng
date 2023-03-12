@@ -888,7 +888,7 @@ let service_select = document.querySelectorAll(".services-single");
 
 let active_service = document.querySelectorAll('.service-active');
 function service_show( n ){
-  for (let index = 0; index < 6; index++) {
+  for (let index = 0; index < 7; index++) {
     console.log(index);
     if(index == n){
       service_select[n].style.display = "block";
@@ -902,7 +902,18 @@ function service_show( n ){
   }
 }
 
+let service_precison= 0;
+function precision(){
+    if(service_precison ==1){
+        document.querySelector(".in-service").style.display="none"
+        service_precison = 0;
+    }
+    else{
+        document.querySelector(".in-service").style.display="block"
+        service_precison = 1;
 
+    }
+}
 
     let inbtn = 1;
     function insource_service() {
