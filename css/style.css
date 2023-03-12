@@ -12661,7 +12661,7 @@ a.ui-button:active,
     padding: 5rem;
     border-radius: 15px;
     background-size: contain;
-    background-color: black;
+    background-color: var(--customColor);
 }
 
 .clients-item-1{
