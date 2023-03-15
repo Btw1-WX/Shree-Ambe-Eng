@@ -174,6 +174,9 @@ exampleCarousel.useControls();
 
 
 
+//autoplay
+window.onload = setInterval(function () {document.querySelector(".clients-controls-next").click();}, 5000);
+document.querySelector(".clients-controls-next").click();
 
 // TYPEIT
 
