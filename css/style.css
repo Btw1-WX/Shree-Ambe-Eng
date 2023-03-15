@@ -4409,8 +4409,8 @@ img {
 
 .project-block .image-box figure a img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 320px;
+    height:520px;
 }
 
 .project-block .image-box .title-box {
