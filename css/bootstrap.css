@@ -7670,6 +7670,7 @@ button.close {
     bottom: 10px;
     left: 50%;
     z-index: 15;
+    display: none;
     width: 60%;
     padding-left: 0;
     margin-left: -30%;
