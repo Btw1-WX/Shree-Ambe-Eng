@@ -12634,7 +12634,7 @@ a.ui-button:active,
  
 .clients{
     width:100%;
-    /* background: var(--customColor); */
+    background: var(--customGray);
     padding: 5rem 0;
     text-align: center;
 }
