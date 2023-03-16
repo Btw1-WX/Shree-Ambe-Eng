@@ -12633,10 +12633,17 @@ a.ui-button:active,
 
  
 .clients{
-    width:100%;
-    background: var(--customGray);
+    width: 100%;
+    /* background: var(--customGray); */
     padding: 5rem 0;
     text-align: center;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #181818;
+    opacity: .90;
+   
 }
 
 .clients h1 {
@@ -12955,13 +12962,27 @@ a.ui-button:active,
 }
 /* //carousel */
 .slide-1{
-    background-image: none !important;
+    background-image: show !important;
 }
-@media (max-width: 872px) {
+.slide-2{
+    background-image: show !important;
+}
+.slide-3{
+    background-image: show !important;
+}
+@media (max-width: 1024px) {
     video{
         display: none !important;
     }
     .slide-1{
+        background-image: show !important;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .slide-2{
+        background-image: show !important;
+    }
+    .slide-3{
         background-image: show !important;
     }
 }
