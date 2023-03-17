@@ -12723,11 +12723,15 @@ a.ui-button:active,
 }
 
 .clients-controls button{
-    background-color: transparent;
+    background-color:#3EC1D5;
+    height: 40px;
+    width: 80px;
+    border-radius:1rem;
+    color: #fff;
     border: 0;
     cursor: pointer;
-    font-size: 30px;
-    margin: 0 50px;
+    font-size: 15px;
+    margin: 0 23px;
     padding: 0 12px;
     text-transform: capitalize;
 }
@@ -12739,17 +12743,20 @@ a.ui-button:active,
 .clients-controls-previous{
     position: relative;
 }
+.clients-controls button:hover{
+    background-color: #00DBFF;
+}
 
-.clients-controls-previous::before{
+/* .clients-controls-previous::before{
     content: "";
     border: solid #000;
     border-width: 0 5px 5px 0;
     display: inline-block;
     height: 5px;
-    left: -30px;
+    left: -16px;
     padding: 10px;
     position: absolute;
-    top: 25%;
+    top: 29%;
     transform: rotate(135deg) translateY(-50%);
     transition: left 0.15s ease-in-out;
     width: 5px;
@@ -12762,9 +12769,9 @@ a.ui-button:active,
 
 .clients-controls-next{
     position: relative;
-}
+} */
 
-.clients-controls-next::before{
+/* .clients-controls-next::before{
     border: solid #000;
     border-width: 0 5px 5px 0;
     content:'';
@@ -12772,16 +12779,16 @@ a.ui-button:active,
     height: 5px;    
     padding: 10px;
     position: absolute;
-    right: -30px;
-    top: 45;
+    right: -14px;
+    top: 44%;
     transform: rotate(-45deg) translateY(-50%);
     transition: right 0.15s ease-in-out;
     width: 5px;
-}
+} */
 
-.clients-controls-next:hover::before{
+/* .clients-controls-next:hover::before{
     right: -40px;
-}
+} */
 
 .clients-nav{
     bottom: -15px;
