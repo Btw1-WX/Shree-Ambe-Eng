@@ -947,19 +947,8 @@ function outsource_service() {
     }
 
 }
-const form = document.querySelector('form');
-var form_email = form.action;
 
-const email_array = ['https://formsubmit.co/gandhiarham1003@gmail.com','https://formsubmit.co/gandhikarnik0909@gmail.com',
-abc,xyz];
 
-const form_services = document.querySelectorAll('.custom-select-box option');
-
-for (i = 0; i < email_array.length; i++){
-        form_services[i].addEventListener('click', function(){
-            form_email = email_array[i];
-        })
-};
 
 
 

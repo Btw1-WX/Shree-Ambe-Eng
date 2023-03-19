@@ -1277,6 +1277,9 @@
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+	.main-banner-content .theme-btn.btn-style-two {
+		margin-top: 1.5rem;
+	}
 	.about-us .about-company h4 {
 		font-size: 18px;
 		line-height: 27px;
