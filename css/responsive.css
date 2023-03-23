@@ -223,7 +223,7 @@
 	}
 	.main-header .header-lower{
 		position: fixed;
-		background-color: #333333;
+		background-color: #fff;
 	}
 	
 	.main-menu .navigation > li > a:before,
@@ -585,12 +585,13 @@
 	.main-menu .navbar-header .navbar-toggle{
 		display:inline-block;
 		z-index:7;
-		top:-1px;
-		border:1px solid  rgb(52, 52, 52);;
+		top:23px;
+		right: 23px;
+		position: fixed;
 		float:none;
 		margin:0px 0px 0px 0px;
 		border-radius:0px;
-		background: rgb(52, 52, 52);;
+		background: var(--customColor);
 	}
 	
 	.main-menu .navbar-header .navbar-toggle .icon-bar{
@@ -880,6 +881,13 @@
 	.main-header.style-three .header-top [class*=pull-] {
 		width: 100%;
 		text-align: center;
+	}
+	.main-menu .navigation>li img {
+		display: none;
+	}
+	.main-menu .navbar-header img {
+		display: block;
+		height: 5.5rem;
 	}
 }
 

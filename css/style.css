@@ -872,9 +872,12 @@ img {
     margin-right: 40px;
 }
 
+.main-menu .navbar-header img {
+    display: none;
+}
+
 .main-menu .navigation>li img {
     height: 5.5rem;
-    width: 5.5rem;
     margin-top: 1rem;
     margin-left: 1rem;
     border: 2px solid transparent;
