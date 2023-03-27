@@ -3935,7 +3935,8 @@ img {
 
 .story-section .content-column .info {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .story-section .content-column .info .name {
@@ -12581,6 +12582,12 @@ a.ui-button:active,
     border-radius: 15px;
     background-size: contain;
     background-color: var(--customColor);
+}
+.clients-item-7,
+.clients-item-8,
+.clients-item-9,
+.clients-item-10{
+    left: 50%;
 }
 
 .clients-item-1{

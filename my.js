@@ -18,10 +18,14 @@ class Carousel{
             e1.classList.remove('clients-item-4');
             e1.classList.remove('clients-item-5');
             e1.classList.remove('clients-item-6');
+            e1.classList.remove('clients-item-7');
+            e1.classList.remove('clients-item-8');
+            e1.classList.remove('clients-item-9');
+            e1.classList.remove('clients-item-10');
         });
 
 
-        this.carouselArray.slice(0,6).forEach((e1,i)=>{
+        this.carouselArray.slice(0,10).forEach((e1,i)=>{
             e1.classList.add(`clients-item-${i+1}`);
         })
     }
