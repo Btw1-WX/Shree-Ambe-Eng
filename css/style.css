@@ -1968,7 +1968,6 @@ img {
     display: block;
     font-size: 30px;
     line-height: 1.2em;
-    color: black;
     font-weight: 900;
     margin: 0;
 }
@@ -1987,8 +1986,6 @@ img {
 .main-banner-content .text {
     font-size: 20px;
     line-height: 30px;
-    color: white8;
-    color: black;
     font-weight: 900;
     font-style: italic;
     margin: 0;
