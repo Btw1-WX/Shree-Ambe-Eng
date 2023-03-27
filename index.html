@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>Shree Ambe | Home </title>
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./images/logo-small.png">
   <link href="css/responsive.css" rel="stylesheet">
@@ -47,15 +50,14 @@
 
               <div class="navbar-collapse collapse clearfix">
                 <ul class="navigation clearfix">
-                  <li><img src="./images/logo-small.png" alt="" value="redirect"
-                                            onclick="page_redirect();"></li>
+                  <li><img src="./images/logo-small.png" alt="" value="redirect" onclick="page_redirect();"></li>
                   <li><a href="index.html">Home</a>
                   </li>
-                  <li><a href="about.html">About Company</a></li>
+                  <li><a href="about.html">About Us</a></li>
                   </li>
                   <li><a href="service.html">Services</a>
                   </li>
-                  <li><a href="projects.html">Products</a></li>
+                  <li><a href="projects.html">Products Users</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
                   <li class="dropdown"><a class="dropdown-item">Contact Us</a>
                     <ul class="dropdown-menu">
@@ -63,7 +65,7 @@
                       <li><a class="dropdown-item special" href="join-us.html">Join Us</a></li>
                     </ul>
                   </li>
-                  
+
                 </ul>
               </div>
             </nav>
@@ -85,15 +87,19 @@
     <div id="minimal-bootstrap-carousel" class="carousel slide carousel-fade slider-home-one" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item active slide-1" style="background-image: url(images/background/4.jpg);background-position: center center;">
-          <video autoplay loop muted controls width="100%">
+        <div class="item active slide-1">
+          <!-- style="background-image: url(images/background/4.jpg);background-position: center center;"> -->
+          <video autoplay loop muted controls width="100%" id="video-1">
             <source src="./images/main-video.mp4" type="video/mp4">
+          </video>
+          <video autoplay loop muted controls width="100%" id="video-2">
+            <source src="./images/Mobile-video.mp4" type="video/mp4">
           </video>
           <div class="carousel-caption">
             <div class="container">
               <div class="box valign-middle">
                 <div class="content">
-                  <div class="main-banner-content"                             >
+                  <div class="main-banner-content">
                     <h3 class="title">Warm welcome to</h3>
                     <h1 id="type1" class="typeit"></h1>
                     <p class="text">Over 24 years experience and knowledge international standards,
@@ -107,50 +113,12 @@
             </div>
           </div>
         </div>
-        <div class="item slide-2" style="background-image: url(images/main-slider/banner-1-2.jpg);background-position: center center;">
-          <video autoplay loop muted controls width="100%">
-            <source src="./images/main-video.mp4" type="video/mp4">
-          </video>
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="box valign-middle">
-                                <div class="content pull-right ">
-                                    <div class="main-banner-content light"                                   >
-                                        <h3 class="title">Industry materials for</h3>
-                                        <h1>Machines</h1>
-                                        <p class="text">Over 24 years experience and knowledge international standards,
-                                            <br> technologicaly changes and industrial systems.
-                                        </p>
-                                        <a href="#" class="theme-btn btn-style-one">Read More</a>
-                                        <a href="#" class="theme-btn btn-style-two">Market Sectors</a>
-                                    </div><!-- /.main-banner-content -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <div class="item slide-3" style="background-image: url(images/main-slider/banner-1-3.jpg);background-position: center center;">
-          <video autoplay loop muted controls width="100%">
-            <source src="./images/main-video.mp4" type="video/mp4">
-          </video>
-        <div class="carousel-caption">
-            <div class="container">
-                <div class="box valign-middle">
-                    <div class="content ">
-                        <div class="main-banner-content"                                  >
-                            <h3 class="title">Provide best industrial</h3>
-                            <h1>Solutions</h1>
-                            <p class="text">Over 24 years experience and knowledge international standards,
-                                <br> technologicaly changes and industrial systems.
-                            </p>
-                            <a href="#" class="theme-btn btn-style-one">Read More</a>
-                            <a href="#" class="theme-btn btn-style-two">Market Sectors</a>
-                        </div><!-- /.main-banner-content -->
-                    </div>
-                </div>
-            </div>
+        <div class="item slide-2"
+          style="background-image: url(images/main-slider/banner-1-2.jpg);background-position: center center;">
         </div>
-    </div>
+        <div class="item slide-3"
+          style="background-image: url(images/main-slider/banner-1-3.jpg);background-position: center center;">
+        </div>
       </div>
       <!-- Controls -->
       <a class="left carousel-control" href="#minimal-bootstrap-carousel" role="button" data-slide="prev">
@@ -175,7 +143,7 @@
     <!-- Highlights -->
     <div class="highlights dark-bg fade-left">
       <div class="auto-container">
-        <div class="highlight-carousel owl-carousel owl-theme fade-left" >
+        <div class="highlight-carousel owl-carousel owl-theme fade-left">
           <!-- Highlight Block -->
           <div class="highlight-block">
             <div class="inner-box">
@@ -197,7 +165,7 @@
             <div class="inner-box">
               <div class="icon-box"><span class="machinery-icon-factory"></span></div>
               <div class="text"> <span>Engineered </span>for excellence, crafted for precision.
-</div>
+              </div>
             </div>
           </div>
         </div>
@@ -320,7 +288,7 @@
         <!-- info box -->
         <div class="info-box">
           <!-- <h3>Since 2006, We provide best solutions for our valuable customers.</h3> -->
-          <a href="#"><i class="icon flaticon-email"></i> shreeambe.engg@gmail.com</a>
+          <a href="#"><i class="icon flaticon-email"></i> inquiry@shreeambeengg.com</a>
         </div>
       </div>
     </section>
@@ -332,7 +300,7 @@
       <div class="auto-container">
         <div class="row clearfix">
           <!-- Content -->
-          <div class="content-column col-md-6 col-sm-12 col-xs-12 " data-aos="fade-right" >
+          <div class="content-column col-md-6 col-sm-12 col-xs-12 " data-aos="fade-right">
             <div class="inner-column">
               <div class="sec-title light">
                 <h2>What We Achived?</h2>
@@ -347,29 +315,48 @@
 
               <div class="testimonial-carousel owl-carousel owl-theme">
                 <div class="testimonial-block-three">
-                    <div class="text">.ISO Certification: Shree Ambe Engineering has been certified by ISO 9001:2015 for its Quality Management System. This certification is a testament to our commitment to providing high-quality products and services to our customers.</div>
+                  <div class="text">.ISO Certification: Shree Ambe Engineering has been certified by ISO 9001:2015 for
+                    its Quality Management System. This certification is a testament to our commitment to providing
+                    high-quality products and services to our customers.</div>
                 </div>
 
                 <div class="testimonial-block-three">
-                    <div class="text">Invitation from Schaeffler: We are proud to have been invited to visit Schaeffler, a leading Canadian company, as a supplier of machined components. Our long-standing relationship with Schaeffler, as well as our many other clients in Germany, Canada, and the USA, is a testament to the quality of our products and services.</div>
+                  <div class="text">Invitation from Schaeffler: We are proud to have been invited to visit Schaeffler, a
+                    leading Canadian company, as a supplier of machined components. Our long-standing relationship with
+                    Schaeffler, as well as our many other clients in Germany, Canada, and the USA, is a testament to the
+                    quality of our products and services.</div>
                 </div>
                 <div class="testimonial-block-three">
-                    <div class="text">Serving Schaffler and Schaeffler for more than 10 years: Shree Ambe Engineering has been serving Schaffler and Schaeffler for more than 10 years, providing them with high-quality machined components for their manufacturing operations. Our long-standing relationship with these companies is a testament to the quality of our products and services.</div>
+                  <div class="text">Serving Schaffler and Schaeffler for more than 10 years: Shree Ambe Engineering has
+                    been serving Schaffler and Schaeffler for more than 10 years, providing them with high-quality
+                    machined components for their manufacturing operations. Our long-standing relationship with these
+                    companies is a testament to the quality of our products and services.</div>
                 </div>
                 <div class="testimonial-block-three">
-                    <div class="text">Overseas clients: We have a growing list of clients from overseas, including Germany, Canada, and the USA. Our ability to serve clients around the world is a testament to the quality of our products and services.</div>
+                  <div class="text">Overseas clients: We have a growing list of clients from overseas, including
+                    Germany, Canada, and the USA. Our ability to serve clients around the world is a testament to the
+                    quality of our products and services.</div>
                 </div>
                 <div class="testimonial-block-three">
-                    <div class="text">High rating from Wander Rating: We are proud to have received a high rating of more than 95% from Wander Rating, a leading rating agency that evaluates companies based on their customer satisfaction and quality of service. This rating is a testament to our commitment to providing high-quality products and services to our customers.</div>
+                  <div class="text">High rating from Wander Rating: We are proud to have received a high rating of more
+                    than 95% from Wander Rating, a leading rating agency that evaluates companies based on their
+                    customer satisfaction and quality of service. This rating is a testament to our commitment to
+                    providing high-quality products and services to our customers.</div>
                 </div>
                 <div class="testimonial-block-three">
-                    <div class="text">Customer satisfaction: We take great pride in our customer satisfaction rates, which are among the highest in the industry. We are committed to providing our customers with the highest-quality products and services, and we are always striving to improve our processes and meet their evolving needs.</div>
+                  <div class="text">Customer satisfaction: We take great pride in our customer satisfaction rates, which
+                    are among the highest in the industry. We are committed to providing our customers with the
+                    highest-quality products and services, and we are always striving to improve our processes and meet
+                    their evolving needs.</div>
                 </div>
                 <div class="testimonial-block-three">
-                    <div class="text">Experienced team: Our team of experienced professionals has a deep knowledge of the industry and is dedicated to providing our customers with the best possible service. We are committed to staying up-to-date with the latest technologies and trends in the industry, and we are always looking for ways to improve our processes and products</div>
+                  <div class="text">Experienced team: Our team of experienced professionals has a deep knowledge of the
+                    industry and is dedicated to providing our customers with the best possible service. We are
+                    committed to staying up-to-date with the latest technologies and trends in the industry, and we are
+                    always looking for ways to improve our processes and products</div>
                 </div>
-            </div>
-              
+              </div>
+
               <a href="about.html" class="more-btn"><i class="machinery-icon-next"></i>Read More</a>
             </div>
           </div>
@@ -377,13 +364,12 @@
           <!-- Video Column -->
           <div class="video-column col-md-6 col-sm-12 col-xs-12" data-aos="fade-left">
             <div class="inner-column">
-                <figure class="image"><img src="images/resource/video-img.jpg" alt="">
-                    <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="link"
-                        data-fancybox="gallery" data-caption=""><span
-                            class="icon fa fa-play-circle"></span></a>
-                </figure>
+              <figure class="image"><img src="images/resource/video-img.jpg" alt="">
+                <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="link" data-fancybox="gallery"
+                  data-caption=""><span class="icon fa fa-play-circle"></span></a>
+              </figure>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>
@@ -413,11 +399,14 @@
                   <div class="tab active-tab" id="info-tab-1">
 
                     <div class="text">
-                      Shree Ambe Engineering is a Vadodara-based manufacturer of high-quality machined components since 2006.
-                       They export to MNCs in Canada, Germany, and the USA and hold an ISO 9001:2015 certification. 
-                       The company's Quality Management System prioritizes customer satisfaction and continuous improvement,
-                        while also being environmentally conscious. Shree Ambe Engineering's success and reputation suggest 
-                        a bright future for the company.
+                      Shree Ambe Engineering is a Vadodara-based manufacturer of high-quality machined components since
+                      2006.
+                      They export to MNCs in Canada, Germany, and the USA and hold an ISO 9001:2015 certification.
+                      The company's Quality Management System prioritizes customer satisfaction and continuous
+                      improvement,
+                      while also being environmentally conscious. Shree Ambe Engineering's success and reputation
+                      suggest
+                      a bright future for the company.
 
                     </div>
                   </div>
@@ -425,8 +414,10 @@
                   <!--Tab-->
                   <div class="tab" id="info-tab-2">
 
-                    <div class="text">Precision manufacturing of the finest caliber is the exclusive focus of Shree Ambe Engineering. 
-                      We are showing our dedication to client satisfaction and engineering expertise by assuring seamless integration and sturdy,
+                    <div class="text">Precision manufacturing of the finest caliber is the exclusive focus of Shree Ambe
+                      Engineering.
+                      We are showing our dedication to client satisfaction and engineering expertise by assuring
+                      seamless integration and sturdy,
                       defect-free components.
                     </div>
                   </div>
@@ -434,9 +425,11 @@
                   <!--Tab-->
                   <div class="tab" id="info-tab-3">
 
-                    <div class="text">It is laudable and ambitious to have a goal of becoming a leading provider of precision engineered components
+                    <div class="text">It is laudable and ambitious to have a goal of becoming a leading provider of
+                      precision engineered components
                       worldwide. Being a one-stop shop for major manufacturers
-                      throughout the world demonstrates your dedication to giving your clients thorough and effective service</div>
+                      throughout the world demonstrates your dedication to giving your clients thorough and effective
+                      service</div>
                   </div>
                 </div>
               </div>
@@ -553,12 +546,17 @@
     <div class="clients" style="background-image: url(images/resource/about-1-1.jpg);" data-aos="fade-up">
       <h1>Our Clients</h1>
       <div class="clients-container">
-        <img src="./images/schaffler.svg" style="height: 300px; padding: 100px 50px;" alt="" class="clients-item clients-item-1" data-index="1">
-        <img src="./images/Barden_Logo_CMYK.svg" style="height: 300px;" alt="" class="clients-item clients-item-2" data-index="2">
-        <img src="./images/acumios.png" style="height: 300px; " alt="" class="clients-item clients-item-3" data-index="3">
+        <img src="./images/schaffler.svg" style="height: 300px; padding: 100px 50px;" alt=""
+          class="clients-item clients-item-1" data-index="1">
+        <img src="./images/Barden_Logo_CMYK.svg" style="height: 300px;" alt="" class="clients-item clients-item-2"
+          data-index="2">
+        <img src="./images/acumios.png" style="height: 300px; " alt="" class="clients-item clients-item-3"
+          data-index="3">
         <img src="./images/nikka.png" alt="" style="height: 300px;" class="clients-item clients-item-4" data-index="4">
-        <img src="./images/skLogow.png" alt="" style="height: 300px;" class="clients-item clients-item-5" data-index="5">
-        <img src="./images/raychem.png" style="height: 300px;"alt="" class="clients-item clients-item-6" data-index="6">
+        <img src="./images/skLogow.png" alt="" style="height: 300px;" class="clients-item clients-item-5"
+          data-index="5">
+        <img src="./images/raychem.png" style="height: 300px;" alt="" class="clients-item clients-item-6"
+          data-index="6">
       </div>
       <div class="clients-controls"></div>
     </div>
@@ -567,8 +565,9 @@
       <div class="auto-container">
         <div class="sec-title text-center">
           <h2>Ask Our Expert</h2>
-          <div class="text " data-aos="fade-left">Your details are kept strictly confidential as per our company privacy policy,
-            Pleasure & praising was we will give you a complete.</div><!-- /.text -->
+          <div class="text " data-aos="fade-left">Your details are kept strictly confidential in accordance with our
+            company's privacy policy. It is our pleasure to provide you with complete satisfaction and praise.</div>
+          <!-- /.text -->
         </div><!-- /.sec-title -->
       </div><!-- /.auto-container -->
     </section><!-- /.request-qoute-block -->
@@ -595,11 +594,11 @@
           <!-- Form Column -->
           <div class="form-column col-md-8 col-sm-12 col-xs-12 g2" data-aos="fade-up">
             <div class="inner-column">
-              <div class="text">For Business: For Business inquiry fill our feedback form and Troll Free
-                Number - +91 9879565874, our team will help you with in 24 hours.</div>
+              <div class="text">For Business: For Business inquiry fill our feedback form - +91 265-353-1211, our team
+                will help you with in 24 hours.</div>
               <!--Contact Form-->
               <div class="contact-form">
-                <form method="post" action = "https://formsubmit.co/inquiry@shreeambeengg.com">
+                <form method="post" action="https://formsubmit.co/inquiry@shreeambeengg.com">
                   <div class="row clearfix">
                     <div class="column col-md-6 col-sm-6 col-xs-12">
                       <div class="form-group">
@@ -646,34 +645,32 @@
         <div class="testimonials-carousel owl-carousel owl-theme">
           <div class="item">
             <div class="signle-testimonial-style-one" style="height: 650px;">
-              <div class="inner-box g2" style="height: 650px;">
-                <img src="images/testimonials/1.png" alt="Awesome Image" class="client-image" />
+              <div class="inner-box g2" style="height: 550px;"> <img src="images/testimonials/1.png" alt="Awesome Image"
+                  class="client-image" />
                 <h3>Rakesh Patel</h3>
                 <span>Director of Operations, MNC in Canada</span>
                 <p>“I have been sourcing machined components from Shree Ambe Engineering for the past 3 years
                   and I have never been disappointed. Their quality control is impeccable and their customer service is
                   top-notch. I highly recommend them to anyone in need of high-quality parts”.</p>
-                <img src="images/testimonials/c-1.png" class="company-logo" alt="Awesome Image" />
               </div><!-- /.inner-box -->
             </div><!-- /.signle-testimonial-style-one -->
           </div><!-- /.item -->
           <div class="item">
             <div class="signle-testimonial-style-one" style="height: 650px;">
-              <div class="inner-box g2" style="height: 650px;">
-                <img src="images/testimonials/2.png" alt="Awesome Image" class="client-image" />
+              <div class="inner-box g2" style="height: 550px;"> <img src="images/testimonials/2.png" alt="Awesome Image"
+                  class="client-image" />
                 <h3>Rohit Singh</h3>
                 <span> Production Manager, MNC in Germany. </span>
                 <p>"Shree Ambe Engineering has been our go-to supplier for machined components for the past 5
                   years. Their attention to detail and commitment to excellence is unmatched. We trust them
                   completely and rely on them to keep our manufacturing operations running smoothly”.</p>
-                <img src="images/testimonials/c-2.png" class="company-logo" alt="Awesome Image" />
               </div><!-- /.inner-box -->
             </div><!-- /.signle-testimonial-style-one -->
           </div><!-- /.item -->
-          <div class="item" >
-            <div class="signle-testimonial-style-one" >
-              <div class="inner-box g2" style="height: 650px;">
-                <img src="images/testimonials/3.png" alt="Awesome Image" class="client-image" />
+          <div class="item">
+            <div class="signle-testimonial-style-one">
+              <div class="inner-box g2" style="height: 550px;"> <img src="images/testimonials/3.png" alt="Awesome Image"
+                  class="client-image" />
                 <h3>Tanvi Mehta</h3>
                 <span> Purchasing Manager, MNC in
                   the USA</span>
@@ -681,62 +678,57 @@
                   doubt that they are one of the best suppliers in the industry. Their pricing is competitive, their
                   products are top-notch, and their customer service is excellent. I would highly recommend them to
                   anyone looking for high-quality machined components”.</p>
-                <img src="images/testimonials/c-3.png" class="company-logo" alt="Awesome Image" />
               </div><!-- /.inner-box -->
             </div><!-- /.signle-testimonial-style-one -->
           </div><!-- /.item -->
           <div class="item">
             <div class="signle-testimonial-style-one" style="height: 650px;">
-              <div class="inner-box g2" style="height: 650px;">
-                <img src="images/testimonials/2.png" alt="Awesome Image" class="client-image" />
+              <div class="inner-box g2" style="height: 550px;"> <img src="images/testimonials/2.png" alt="Awesome Image"
+                  class="client-image" />
                 <h3>Amit Kumar</h3>
                 <span>Director of Operations, MNC in India</span>
                 <p>"As a long-time customer of Shree Ambe Engineering, I can attest to their commitment to quality
                   and customer satisfaction. They always go above and beyond to ensure that our needs are met and
                   our expectations are exceeded. I would recommend them to anyone in need of high-quality
                   machined components”.</p>
-                <img src="images/testimonials/c-2.png" class="company-logo" alt="Awesome Image" />
               </div><!-- /.inner-box -->
             </div><!-- /.signle-testimonial-style-one -->
           </div><!-- /.item -->
           <div class="item">
             <div class="signle-testimonial-style-one" style="height: 650px;">
-              <div class="inner-box g2" style="height: 650px;">
-                <img src="images/testimonials/2.png" alt="Awesome Image" class="client-image" />
+              <div class="inner-box g2" style="height: 550px;"> <img src="images/testimonials/2.png" alt="Awesome Image"
+                  class="client-image" />
                 <h3>Nisha Sharma</h3>
                 <span> Production Manager, MNC in Canada</span>
                 <p>"We have been working with Shree Ambe Engineering for several years now and we have always
                   been impressed with their attention to detail and dedication to excellence. Their expertise and
                   knowledge of the industry is second to none and we trust them completely to deliver high-quality
                   parts every time”.</p>
-                <img src="images/testimonials/c-2.png" class="company-logo" alt="Awesome Image" />
               </div><!-- /.inner-box -->
             </div><!-- /.signle-testimonial-style-one -->
           </div><!-- /.item -->
           <div class="item">
             <div class="signle-testimonial-style-one" style="height: 650px;">
-              <div class="inner-box g2" style="height: 650px;">
-                <img src="images/testimonials/2.png" alt="Awesome Image" class="client-image" />
+              <div class="inner-box g2" style="height: 550px;"> <img src="images/testimonials/2.png" alt="Awesome Image"
+                  class="client-image" />
                 <h3>Ankit Shah</h3>
                 <span>Director of Operations,
                   MNC in Germany</span>
                 <p>"Shree Ambe Engineering is a top-notch supplier of machined components. Their quality control
                   processes are rigorous and their products are of the highest quality. We have been working with
                   them for many years and we have never been disappointed”.</p>
-                <img src="images/testimonials/c-2.png" class="company-logo" alt="Awesome Image" />
               </div><!-- /.inner-box -->
             </div><!-- /.signle-testimonial-style-one -->
           </div><!-- /.item -->
           <div class="item">
             <div class="signle-testimonial-style-one" style="height: 650px;">
-              <div class="inner-box g2" style="height: 650px;">
-                <img src="images/testimonials/2.png" alt="Awesome Image" class="client-image" />
+              <div class="inner-box g2" style="height: 550px;"> <img src="images/testimonials/2.png" alt="Awesome Image"
+                  class="client-image" />
                 <h3>Prakash Patel</h3>
                 <span>Purchasing Manager, MNC in the USA</span>
                 <p>"I have worked with many suppliers over the years, but Shree Ambe Engineering stands out as one
                   of the best. Their professionalism, expertise, and dedication to quality are unmatched. I would highly
                   recommend them to anyone looking for high-quality machined components”.</p>
-                <img src="images/testimonials/c-2.png" class="company-logo" alt="Awesome Image" />
               </div><!-- /.inner-box -->
             </div><!-- /.signle-testimonial-style-one -->
           </div><!-- /.item -->
@@ -763,9 +755,9 @@
                 <div class="widget-content">
                   <div class="text">
                     <h4>Let’s join & create something together</h4>
-                    <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
-                      and will give you completed.</p>
-                    
+                    <div>Create something remarkable with us at Shree Ambe Engineering. Join our collaborative community
+                      and let's turn your ideas into reality. Together, we can achieve great things.</div>
+
                   </div>
                 </div>
               </div>
@@ -787,7 +779,7 @@
                     <li><a href="service.html">Our Services</a></li>
                     <li><a href="projects.html">Latest Projects</a></li>
                     <li><a href="contact.html">Get a Quote</a></li>
-                     
+
                     <li><a href="contact-2.html">Contact Us</a></li>
                   </ul>
                 </div>
@@ -807,7 +799,7 @@
                   </div><!-- /.icon-box -->
                   <div class="text-box">
                     <h3>For Business Dealing:</h3>
-                    <p>+91 9879565874</p>
+                    <p>+91 265-353-1211</p>
                     <p>Available 8:30AM- 8:30PM <br>Mon-Sat.</p>
                   </div><!-- /.text-box -->
                 </div><!-- /.single-contact-widget -->
@@ -816,7 +808,7 @@
                     <i class="machinery-icon-map"></i>
                   </div><!-- /.icon-box -->
                   <div class="text-box">
-                    <p>749/2/A2 GIDC Makarpura <br> Vadodara -390010, Gujarat</p>
+                    <p>749/2/A-2 GIDC Makarpura <br> Vadodara -390010, Gujarat</p>
                   </div><!-- /.text-box -->
                 </div><!-- /.single-contact-widget -->
                 <div class="single-contact-widget">
@@ -825,7 +817,7 @@
                   </div><!-- /.icon-box -->
                   <div class="text-box">
                     <h3>Mail Us at</h3>
-                    <p>shreeambe.engg@gmail.com</p>
+                    <p>inquiry@shreeambeengg.com</p>
                   </div><!-- /.text-box -->
                 </div><!-- /.single-contact-widget -->
               </div>
@@ -846,7 +838,8 @@
               <a href="#" class="expert-link"><i class="machinery-icon-human-rights"></i>Quote From Our Expert</a>
             </div><!-- /.col-md-4 -->
             <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="copyright-text">&copy; All Rights Reserved by <a href="https://wictronix.com/"><img src="./images/gradient.png" style="background: white; padding: 5px; border-radius: 10px;" height="30px" width="100px" alt=""></a></div>
+              <div class="copyright-text">&copy; All Rights Reserved by <a href="https://wictronix.com/"><img
+                    src="./images/gradient.png" alt=""></a></div>
             </div><!-- /.col-md-4 -->
             <div class="col-md-4 col-sm-4 col-xs-12 text-right">
               <ul class="footer-menu">
@@ -863,7 +856,10 @@
   </div>
 
   <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-arrow-up"></span></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <script src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/jquery.fancybox.js"></script>

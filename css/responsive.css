@@ -437,10 +437,9 @@
 	
 
 	.header-lower.animated.slideInDown {
-		top: 0;
-		border: none;
-		border-radius: 0;
-		width: 100%;
+		top: 25px;
+		border-radius: 2rem;
+		width: 90%;
 	}
 	.main-header .btn-outer{
 		border: 0 none;
@@ -577,7 +576,7 @@
 		display:block;
 		text-align:right;
 		width:100%;
-		padding:13px 0px 14px;
+		padding:6px 0px 6px;
 		right:0px;
 		z-index:12;
 	}
@@ -585,7 +584,7 @@
 	.main-menu .navbar-header .navbar-toggle{
 		display:inline-block;
 		z-index:7;
-		top:23px;
+		top:15px;
 		right: 23px;
 		position: fixed;
 		float:none;
@@ -887,7 +886,12 @@
 	}
 	.main-menu .navbar-header img {
 		display: block;
-		height: 5.5rem;
+		height: 5rem;
+		background: white;
+		border-radius: 2rem;
+	}
+	.contact-section-two {
+		padding: 50px 3rem;
 	}
 }
 
@@ -904,21 +908,11 @@
 		text-align: center;
 	}
 
-	.accordion-box .block .acc-btn{
-		font-size: 16px;
-		line-height: 24px;
-	}
-
 	.project-single-section .title{
 		font-size: 24px;
 		line-height: 1.2em;
 		margin-bottom: 20px;
 	}
-
-	.accordion-box .block .content{
-		padding: 25px 15px 25px;
-	}
-
 	.main-header .header-top .top-left ul li{
 		margin-right: 0;
 		display: block;
