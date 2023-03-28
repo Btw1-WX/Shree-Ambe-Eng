@@ -12887,3 +12887,10 @@ a.ui-button:active,
         display: block;
     }
 }
+
+#either-gif-or-video  {
+     display: initial; 
+    }
+@media (-webkit-video-playable-inline) {
+    #either-gif-or-video  { display: initial; }
+}
