@@ -1839,10 +1839,14 @@ img {
     color: var(--customWhite);
 }
 
-#minimal-bootstrap-carousel .typeit {
+#minimal-bootstrap-carousel span {
     color: var(--customColor);
     font-family: 'courgette';
     font-style: italic;
+    font-size: 8rem;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 667px) {
@@ -1970,17 +1974,6 @@ img {
     line-height: 1.2em;
     font-weight: 900;
     margin: 0;
-}
-
-.main-banner-content h1 {
-    font-size: 120px;
-    color: #181818;
-    font-weight: 400;
-    line-height: 1.1em;
-    letter-spacing: 0px;
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 10px;
 }
 
 .main-banner-content .text {
