@@ -1813,32 +1813,6 @@ img {
     display: block;
 }
 
-#minimal-bootstrap-carousel .carousel-control {
-    background: none;
-    width: 60px;
-    height: 60px;
-    font-size: 36px;
-    line-height: 56px;
-    color: var(--customColor);
-    background: transparent;
-    visibility: visible !important;
-    opacity: 1;
-    font-weight: normal;
-    margin-top: -20px;
-    border: 2px solid rgba(255, 255, 255, .3);
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    top: 50%;
-    z-index: 99;
-    text-shadow: none;
-}
-
-#minimal-bootstrap-carousel .carousel-control:hover {
-    background: var(--customColor);
-    border-color: var(--customColor);
-    color: var(--customWhite);
-}
-
 #minimal-bootstrap-carousel span {
     color: var(--customColor);
     font-family: 'courgette';
@@ -1847,29 +1821,6 @@ img {
     font-weight: 400;
     line-height: 1.1em;
     margin-bottom: 10px;
-}
-
-@media (max-width: 667px) {
-    #minimal-bootstrap-carousel .carousel-control {
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
-        line-height: 25px;
-    }
-}
-
-#minimal-bootstrap-carousel .carousel-control.left {
-    left: 1%;
-    display: none;
-}
-
-#minimal-bootstrap-carousel .carousel-control.right {
-    right: 1%;
-    display: none;
-}
-
-#minimal-bootstrap-carousel .carousel-control:hover {
-    opacity: 1;
 }
 
 /* processing for fadeing effect styles */
@@ -1899,49 +1850,8 @@ img {
     transform: translate3d(0, 0, 0);
 }
 
-.carousel-fade .carousel-control {
-    z-index: 2;
-}
 
 /* fixing slider height */
-#minimal-bootstrap-carousel .custom-navigation {
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 999;
-    margin: 0;
-}
-
-#minimal-bootstrap-carousel .custom-navigation,
-#minimal-bootstrap-carousel .custom-navigation li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#minimal-bootstrap-carousel .custom-navigation li {
-    border: 0;
-    border-radius: 0;
-    text-indent: 0;
-    width: 12px;
-    height: 12px;
-    background-color: transparent;
-    border: 2px solid var(--customWhite);
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-#minimal-bootstrap-carousel .custom-navigation li+li {
-    margin-left: 10px;
-}
-
-#minimal-bootstrap-carousel .custom-navigation li.active {
-    opacity: 1;
-    border-color: var(--customColor);
-    background: var(--customColor);
-}
 
 #minimal-bootstrap-carousel.slider-home-one .carousel-inner .item {
     height: 100vh;

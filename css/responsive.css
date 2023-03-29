@@ -231,7 +231,7 @@
 	}
 
 	.main-header .header-lower {
-		position: relative;
+		position: fixed;
 		background-color: #fff;
 	}
 
@@ -601,11 +601,11 @@
 	}
 
 	.main-menu .navbar-header .navbar-toggle {
-		display: inline-block;
+		display: block;
 		z-index: 7;
 		top: 15px;
-		right: 23px;
-		position: fixed;
+		right: 8px;
+		position: absolute;
 		float: none;
 		margin: 0px 0px 0px 0px;
 		border-radius: 0px;

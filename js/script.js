@@ -31,7 +31,7 @@
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
 		if ($('.preloader').length) {
-			$('.preloader').delay(1000).fadeOut(500);
+			$('.preloader').delay(500).fadeOut(300);
 		}
 
 	}
