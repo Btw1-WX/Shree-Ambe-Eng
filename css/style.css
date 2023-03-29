@@ -2558,6 +2558,7 @@ img {
 .services-section .info-box {
     position: relative;
     text-align: center;
+    word-break: break-all;
 }
 
 .services-section .info-box h3 {
@@ -9589,56 +9590,6 @@ a.ui-button:active,
     border-color: var(--customColor);
 }
 
-.testimonials-widget h3 {
-    position: relative;
-    font-size: 20px;
-    line-height: 1.2em;
-    color: var(--customWhite);
-    font-weight: 400;
-    margin-bottom: 23px;
-}
-
-.testimonials-widget {
-    position: relative;
-    padding-bottom: 27px;
-    border-bottom: 1px solid #f2f2f2;
-}
-
-.testimonials-widget .owl-nav {
-    display: none;
-}
-
-.testimonials-widget .owl-dots {
-    position: absolute;
-    right: 85px;
-    left: auto;
-    top: -48px;
-}
-
-.testimonials-widget .owl-dots .owl-dot {
-    position: relative;
-    width: 10px;
-    height: 10px;
-    border: 2px solid var(--customColor);
-    display: inline-block;
-    margin-left: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -moz-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.testimonials-widget .owl-dots .owl-dot.active {
-    width: 10px;
-    background-color: var(--customColor);
-}
-
 /*Recent Comments*/
 
 .sidebar .recent-comments {
@@ -12886,11 +12837,4 @@ a.ui-button:active,
     #video-2 {
         display: block;
     }
-}
-
-#either-gif-or-video  {
-     display: initial; 
-    }
-@media (-webkit-video-playable-inline) {
-    #either-gif-or-video  { display: initial; }
 }
