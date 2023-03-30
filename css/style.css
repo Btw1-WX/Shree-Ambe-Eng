@@ -2765,6 +2765,7 @@ img {
 
 .two-column .image-column img {
     max-width: 100%;
+    margin-top: 2rem;
     height: auto;
     display: block;
 }
@@ -3233,6 +3234,9 @@ img {
     margin-bottom: 30px;
 }
 
+.what-we-do .sec-title h2 {
+    color: var(--customGray);
+}
 .what-we-do .sec-title h5 {
     display: block;
     font-size: 22px;
@@ -3263,7 +3267,7 @@ img {
     line-height: 80px;
     color: var(--customColor);
     font-weight: 700;
-    margin-right: 45px;
+    margin-right: 25px;
     font-family: 'Roboto', sans-serif;
     position: relative;
     display: inline-block;
@@ -3279,7 +3283,6 @@ img {
 }
 
 .what-we-do .info-box .title {
-    float: left;
     position: relative;
     padding: 17.5px 0;
 }
@@ -8277,6 +8280,8 @@ img {
 }
 
 .contact-section.style-two .form-column .inner-column {
+    background: #f7f7f7;
+    border: 2px solid var(--customColor);
     top: -160px;
     max-width: 100%;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
