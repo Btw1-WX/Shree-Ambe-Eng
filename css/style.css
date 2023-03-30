@@ -2128,7 +2128,7 @@ img {
     font-size: 16px;
 }
 
-.sec-title h2+.text {
+.sec-title h2 .text {
     margin-top: 22px;
 }
 
@@ -2688,7 +2688,6 @@ img {
 ====================================================================
 
 ***/
-
 .services-single {
     position: relative;
     display:none

@@ -863,7 +863,6 @@
 
 // Services Button
 
-
 let service_select = document.querySelectorAll(".services-single");
 
 let active_service = document.querySelectorAll('.service-active');
@@ -879,19 +878,6 @@ function service_show(n) {
 			service_select[index].style.display = "none";
 			active_service[index].classList.remove("coloring");
 		}
-	}
-}
-
-let service_precison = 0;
-function precision() {
-	if (service_precison == 1) {
-		document.querySelector(".in-service").style.display = "none"
-		service_precison = 0;
-	}
-	else {
-		document.querySelector(".in-service").style.display = "block"
-		service_precison = 1;
-
 	}
 }
 
