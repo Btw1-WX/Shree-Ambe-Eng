@@ -3555,7 +3555,7 @@ img {
 .about-section-two .outer-box {
     position: relative;
     display: block;
-    padding: 100px 50px 50px;
+    padding: 20rem 50px 0;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -3564,6 +3564,9 @@ img {
 .about-section-two .highlight-box {
     position: relative;
     float: right;
+    top: 14rem;
+    border: 2px solid var(--customGray);
+    border-radius: 2rem;
     width: 100%;
     max-width: 430px;
     background-color: var(--customWhite);
@@ -3575,19 +3578,7 @@ img {
 
 .about-block-two {
     position: relative;
-    padding: 40px 40px 40px;
-    margin-bottom: 40px;
-}
-
-.about-section-two .about-block-two:before {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 130px;
-    line-height: 130px;
-    color: #f2f2f2;
-    content: "\f13d";
-    font-family: "Flaticon";
+    padding: 2rem 2rem 6rem;
 }
 
 .about-block-two .icon-box {
@@ -3633,7 +3624,7 @@ img {
 .info-carousel .owl-dots {
     position: absolute;
     left: 30px;
-    bottom: 30px;
+    bottom: 20px;
     text-align: center;
 }
 
