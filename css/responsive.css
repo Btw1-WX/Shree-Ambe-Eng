@@ -211,7 +211,7 @@
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 890px) {
 
 	.main-menu .navigation>li>ul,
 	.main-menu .navigation>li>ul>li>ul {
@@ -232,7 +232,7 @@
 
 	.main-header .header-lower {
 		position: fixed;
-		background-color: #fff;
+		background-color: transparent;
 	}
 
 	.main-menu .navigation>li>a:before,
@@ -608,7 +608,7 @@
 		position: absolute;
 		float: none;
 		margin: 0px 0px 0px 0px;
-		border-radius: 0px;
+		border-radius: 1rem;
 		background: var(--customColor);
 	}
 
